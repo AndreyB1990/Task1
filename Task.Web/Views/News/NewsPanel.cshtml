@@ -1,6 +1,7 @@
 ﻿@using Task.DALModels
 @model IEnumerable<News>     
-<script src="@Url.Content("~/Scripts/news.js")" type="text/javascript"></script>
+<script src="@Url.Content("~/Scripts/SweetPager/sweet-pager.js")" type="text/javascript"></script>
+<script src="@Url.Content("~/Scripts/SweetPager/sweet-pager-functions.js")" type="text/javascript"></script>
 
 <input id="news-panel-info" type="hidden" data-info='{"Page": "@ViewBag.Page", "UserIsAdmin": "@ViewBag.userIsAdmin" }'/>
 <script src="@Url.Content("~/Scripts/jQueryTemplateConfigs/news-panel-items.js")" type="text/javascript"></script>

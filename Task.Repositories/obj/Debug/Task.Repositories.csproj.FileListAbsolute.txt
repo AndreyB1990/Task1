@@ -47,3 +47,20 @@ C:\Users\Andrei_Bonda\Dropbox\Task\Task.Repositories\bin\Debug\NLog.dll
 C:\Users\Andrei_Bonda\Dropbox\Task\Task.Repositories\bin\Debug\NLog.xml
 D:\Andrey Bonda\Dropbox\Task\Task.Repositories\bin\Debug\NLog.dll
 D:\Andrey Bonda\Dropbox\Task\Task.Repositories\bin\Debug\NLog.xml
+C:\Users\Andrei_Bonda\Task1\Task.Repositories\bin\Debug\Task.Repositories.dll
+C:\Users\Andrei_Bonda\Task1\Task.Repositories\bin\Debug\Task.Repositories.pdb
+C:\Users\Andrei_Bonda\Task1\Task.Repositories\bin\Debug\FluentNHibernate.dll
+C:\Users\Andrei_Bonda\Task1\Task.Repositories\bin\Debug\NHibernate.ByteCode.Castle.dll
+C:\Users\Andrei_Bonda\Task1\Task.Repositories\bin\Debug\NHibernate.dll
+C:\Users\Andrei_Bonda\Task1\Task.Repositories\bin\Debug\Ninject.dll
+C:\Users\Andrei_Bonda\Task1\Task.Repositories\bin\Debug\Task.DALModels.dll
+C:\Users\Andrei_Bonda\Task1\Task.Repositories\bin\Debug\Task.Infrastructure.dll
+C:\Users\Andrei_Bonda\Task1\Task.Repositories\bin\Debug\NLog.dll
+C:\Users\Andrei_Bonda\Task1\Task.Repositories\bin\Debug\Iesi.Collections.dll
+C:\Users\Andrei_Bonda\Task1\Task.Repositories\bin\Debug\Castle.Core.dll
+C:\Users\Andrei_Bonda\Task1\Task.Repositories\bin\Debug\Task.DALModels.pdb
+C:\Users\Andrei_Bonda\Task1\Task.Repositories\bin\Debug\Task.Infrastructure.pdb
+C:\Users\Andrei_Bonda\Task1\Task.Repositories\bin\Debug\NLog.xml
+C:\Users\Andrei_Bonda\Task1\Task.Repositories\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Andrei_Bonda\Task1\Task.Repositories\obj\Debug\Task.Repositories.dll
+C:\Users\Andrei_Bonda\Task1\Task.Repositories\obj\Debug\Task.Repositories.pdb

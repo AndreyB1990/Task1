@@ -1,0 +1,23 @@
+﻿@{
+    Layout = "~/Views/Shared/_MainLayout.cshtml";
+}
+<div id="menu">
+    <div class="nano">
+        <div class="content">
+            @Html.Partial("_Menu")
+        </div>
+    </div>
+</div>
+<div id="container">
+    <div id="main">
+        <div id="content-container">
+            @RenderSection("News", false)
+            <div id="about" class="nano">
+                <div id="content" class="content">
+                    @RenderBody()
+                </div>
+            </div>
+        </div>
+        @Html.Partial("_CompanyDetails")
+    </div>
+</div>

@@ -50,3 +50,20 @@ C:\Users\Andrei_Bonda\Dropbox\Task\Task.Services\bin\Debug\NLog.dll
 C:\Users\Andrei_Bonda\Dropbox\Task\Task.Services\bin\Debug\NLog.xml
 D:\Andrey Bonda\Dropbox\Task\Task.Services\bin\Debug\NLog.dll
 D:\Andrey Bonda\Dropbox\Task\Task.Services\bin\Debug\NLog.xml
+C:\Users\Andrei_Bonda\Task1\Task.Services\bin\Debug\Task.Services.dll
+C:\Users\Andrei_Bonda\Task1\Task.Services\bin\Debug\Task.Services.pdb
+C:\Users\Andrei_Bonda\Task1\Task.Services\bin\Debug\Ninject.dll
+C:\Users\Andrei_Bonda\Task1\Task.Services\bin\Debug\Task.DALModels.dll
+C:\Users\Andrei_Bonda\Task1\Task.Services\bin\Debug\Task.Infrastructure.dll
+C:\Users\Andrei_Bonda\Task1\Task.Services\bin\Debug\Task.Repositories.dll
+C:\Users\Andrei_Bonda\Task1\Task.Services\bin\Debug\NLog.dll
+C:\Users\Andrei_Bonda\Task1\Task.Services\bin\Debug\FluentNHibernate.dll
+C:\Users\Andrei_Bonda\Task1\Task.Services\bin\Debug\NHibernate.dll
+C:\Users\Andrei_Bonda\Task1\Task.Services\bin\Debug\Iesi.Collections.dll
+C:\Users\Andrei_Bonda\Task1\Task.Services\bin\Debug\Task.DALModels.pdb
+C:\Users\Andrei_Bonda\Task1\Task.Services\bin\Debug\Task.Infrastructure.pdb
+C:\Users\Andrei_Bonda\Task1\Task.Services\bin\Debug\Task.Repositories.pdb
+C:\Users\Andrei_Bonda\Task1\Task.Services\bin\Debug\NLog.xml
+C:\Users\Andrei_Bonda\Task1\Task.Services\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Andrei_Bonda\Task1\Task.Services\obj\Debug\Task.Services.dll
+C:\Users\Andrei_Bonda\Task1\Task.Services\obj\Debug\Task.Services.pdb

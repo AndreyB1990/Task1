@@ -26,3 +26,13 @@ C:\Users\Andrei_Bonda\Dropbox\Task\Task.Infrastructure\bin\Debug\NLog.dll
 C:\Users\Andrei_Bonda\Dropbox\Task\Task.Infrastructure\bin\Debug\NLog.xml
 D:\Andrey Bonda\Dropbox\Task\Task.Infrastructure\bin\Debug\NLog.dll
 D:\Andrey Bonda\Dropbox\Task\Task.Infrastructure\bin\Debug\NLog.xml
+C:\Users\Andrei_Bonda\Task1\Task.Infrastructure\bin\Debug\Task.Infrastructure.dll
+C:\Users\Andrei_Bonda\Task1\Task.Infrastructure\bin\Debug\Task.Infrastructure.pdb
+C:\Users\Andrei_Bonda\Task1\Task.Infrastructure\bin\Debug\Ninject.dll
+C:\Users\Andrei_Bonda\Task1\Task.Infrastructure\bin\Debug\NLog.dll
+C:\Users\Andrei_Bonda\Task1\Task.Infrastructure\bin\Debug\Task.DALModels.dll
+C:\Users\Andrei_Bonda\Task1\Task.Infrastructure\bin\Debug\Task.DALModels.pdb
+C:\Users\Andrei_Bonda\Task1\Task.Infrastructure\bin\Debug\NLog.xml
+C:\Users\Andrei_Bonda\Task1\Task.Infrastructure\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Andrei_Bonda\Task1\Task.Infrastructure\obj\Debug\Task.Infrastructure.dll
+C:\Users\Andrei_Bonda\Task1\Task.Infrastructure\obj\Debug\Task.Infrastructure.pdb

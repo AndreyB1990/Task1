@@ -143,6 +143,11 @@
     <Content Include="Content\tipsy.css" />
     <Content Include="Global.asax" />
     <Content Include="JQueryTemplates\Girls\GirlsItemsTemplate.htm" />
+    <Content Include="Scripts\convert-json-date.js" />
+    <Content Include="Scripts\Delete\delete-girls-item.js" />
+    <Content Include="Scripts\Delete\delete-news-item.js" />
+    <Content Include="Scripts\Delete\delete-news-panel-item.js" />
+    <Content Include="Scripts\highlight-element.js" />
     <Content Include="Scripts\jquery-1.7.2.js" />
     <Content Include="Scripts\jquery-1.7.2.min.js" />
     <Content Include="Scripts\jquery-ui-1.8.11.js" />
@@ -160,15 +165,16 @@
     <Content Include="Scripts\jQueryTemplateConfigs\news-item.js" />
     <Content Include="Scripts\jQueryTemplateConfigs\news-items.js" />
     <Content Include="Scripts\main.js" />
-    <Content Include="Scripts\news.js" />
+    <Content Include="Scripts\SweetPager\sweet-pager-functions.js" />
+    <Content Include="Scripts\SweetPager\sweet-pager.js" />
     <Content Include="JQueryTemplates\News\NewsItemsTemplate.htm" />
     <Content Include="JQueryTemplates\News\NewsItemTemplate.htm" />
     <Content Include="JQueryTemplates\News\NewsPanelItemsTemplate.htm" />
     <Content Include="Scripts\jQueryTemplateConfigs\news-panel-items.js" />
-    <Content Include="Scripts\Pager\doPager.js" />
-    <Content Include="Scripts\Pager\girlsPager.js" />
-    <Content Include="Scripts\Pager\newsPager.js" />
-    <Content Include="Scripts\paging.js" />
+    <Content Include="Scripts\Pager\paging-functions.js" />
+    <Content Include="Scripts\Pager\girls-pager.js" />
+    <Content Include="Scripts\Pager\news-pager.js" />
+    <Content Include="Scripts\Pager\paging.js" />
     <Content Include="Scripts\string.format.js" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
@@ -189,7 +195,7 @@
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Error\Error.cshtml" />
     <Content Include="Views\Account\LogOnPartial.cshtml" />
-    <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\Shared\_MainLayout.cshtml" />
     <Content Include="Views\Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -269,6 +275,9 @@
     <Content Include="Views\Shared\_Menu.cshtml" />
     <Content Include="Views\Shared\_Footer.cshtml" />
     <Content Include="Views\Error\Forbidden.cshtml" />
+    <Content Include="Views\Shared\_AdminLayout.cshtml" />
+    <Content Include="Views\Shared\_UsualLayout.cshtml" />
+    <Content Include="Views\Shared\_CompanyDetails.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Code\" />

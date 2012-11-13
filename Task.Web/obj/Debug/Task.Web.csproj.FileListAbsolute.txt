@@ -64,3 +64,25 @@ C:\Users\Andrei_Bonda\Dropbox\Task\Task.Web\bin\NLog.dll
 C:\Users\Andrei_Bonda\Dropbox\Task\Task.Web\bin\NLog.xml
 D:\Andrey Bonda\Dropbox\Task\Task.Web\bin\NLog.dll
 D:\Andrey Bonda\Dropbox\Task\Task.Web\bin\NLog.xml
+C:\Users\Andrei_Bonda\Task1\Task.Web\bin\Task.Web.dll
+C:\Users\Andrei_Bonda\Task1\Task.Web\bin\Task.Web.pdb
+C:\Users\Andrei_Bonda\Task1\Task.Web\bin\AutoMapper.dll
+C:\Users\Andrei_Bonda\Task1\Task.Web\bin\EntityFramework.dll
+C:\Users\Andrei_Bonda\Task1\Task.Web\bin\Ninject.dll
+C:\Users\Andrei_Bonda\Task1\Task.Web\bin\Task.DALModels.dll
+C:\Users\Andrei_Bonda\Task1\Task.Web\bin\Task.Infrastructure.dll
+C:\Users\Andrei_Bonda\Task1\Task.Web\bin\Task.Repositories.dll
+C:\Users\Andrei_Bonda\Task1\Task.Web\bin\Task.Services.dll
+C:\Users\Andrei_Bonda\Task1\Task.Web\bin\NLog.dll
+C:\Users\Andrei_Bonda\Task1\Task.Web\bin\FluentNHibernate.dll
+C:\Users\Andrei_Bonda\Task1\Task.Web\bin\NHibernate.dll
+C:\Users\Andrei_Bonda\Task1\Task.Web\bin\Iesi.Collections.dll
+C:\Users\Andrei_Bonda\Task1\Task.Web\bin\Task.DALModels.pdb
+C:\Users\Andrei_Bonda\Task1\Task.Web\bin\Task.Infrastructure.pdb
+C:\Users\Andrei_Bonda\Task1\Task.Web\bin\Task.Repositories.pdb
+C:\Users\Andrei_Bonda\Task1\Task.Web\bin\Task.Services.pdb
+C:\Users\Andrei_Bonda\Task1\Task.Web\bin\EntityFramework.xml
+C:\Users\Andrei_Bonda\Task1\Task.Web\bin\NLog.xml
+C:\Users\Andrei_Bonda\Task1\Task.Web\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Andrei_Bonda\Task1\Task.Web\obj\Debug\Task.Web.dll
+C:\Users\Andrei_Bonda\Task1\Task.Web\obj\Debug\Task.Web.pdb

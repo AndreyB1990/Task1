@@ -17,3 +17,10 @@ C:\Users\Andrei_Bonda\Dropbox\Task\Task.DALModels\bin\Debug\Task.Metadata.dll
 C:\Users\Andrei_Bonda\Dropbox\Task\Task.DALModels\bin\Debug\Task.Metadata.pdb
 D:\Andrey Bonda\Dropbox\Task\Task.DALModels\bin\Debug\Task.Metadata.dll
 D:\Andrey Bonda\Dropbox\Task\Task.DALModels\bin\Debug\Task.Metadata.pdb
+C:\Users\Andrei_Bonda\Task1\Task.DALModels\bin\Debug\Task.DALModels.dll
+C:\Users\Andrei_Bonda\Task1\Task.DALModels\bin\Debug\Task.DALModels.pdb
+C:\Users\Andrei_Bonda\Task1\Task.DALModels\bin\Debug\Task.Metadata.dll
+C:\Users\Andrei_Bonda\Task1\Task.DALModels\bin\Debug\Task.Metadata.pdb
+C:\Users\Andrei_Bonda\Task1\Task.DALModels\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Andrei_Bonda\Task1\Task.DALModels\obj\Debug\Task.DALModels.dll
+C:\Users\Andrei_Bonda\Task1\Task.DALModels\obj\Debug\Task.DALModels.pdb

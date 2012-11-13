@@ -1,3 +1,5 @@
-﻿@{
-    Layout = "~/Views/Shared/_Layout.cshtml";
+﻿@using Task.Infrastructure
+@using Task.Web
+@{
+    Layout = IsUserInRoleMethod.IsUserInRole(User.Identity.Name, Constants.ROLE_ADMIN) ? "~/Views/Shared/_AdminLayout.cshtml" : "~/Views/Shared/_UsualLayout.cshtml";
 }
