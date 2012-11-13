@@ -1,0 +1,19 @@
+﻿<tr data-id="${Id}">
+    <td class="table-girls-first-td">
+        ${Name}
+    </td>
+    <td>
+        ${Factor}
+    </td>
+    <td>
+        ${Age}
+    </td>
+    {{if $item.isAdmin == 'True'}}
+    <td>
+        <a href="/Girls/Edit/${Id}">Edit</a>
+    </td>
+    <td>
+        <a href="#" class="delete-girls-item">Delete</a>
+    </td>
+    {{/if}}
+</tr>

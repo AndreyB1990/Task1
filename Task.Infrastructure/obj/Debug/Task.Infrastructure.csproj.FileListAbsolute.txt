@@ -1,0 +1,28 @@
+C:\Users\Andrei_Bonda\Dropbox\Task\Task.Infrastructure\bin\Debug\Task.Infrastructure.dll
+C:\Users\Andrei_Bonda\Dropbox\Task\Task.Infrastructure\bin\Debug\Task.Infrastructure.pdb
+C:\Users\Andrei_Bonda\Dropbox\Task\Task.Infrastructure\bin\Debug\Ninject.dll
+C:\Users\Andrei_Bonda\Dropbox\Task\Task.Infrastructure\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Andrei_Bonda\Dropbox\Task\Task.Infrastructure\obj\Debug\Task.Infrastructure.dll
+C:\Users\Andrei_Bonda\Dropbox\Task\Task.Infrastructure\obj\Debug\Task.Infrastructure.pdb
+D:\Andrey Bonda\Dropbox\Task\Task.Infrastructure\bin\Debug\Task.Infrastructure.dll
+D:\Andrey Bonda\Dropbox\Task\Task.Infrastructure\bin\Debug\Task.Infrastructure.pdb
+D:\Andrey Bonda\Dropbox\Task\Task.Infrastructure\bin\Debug\Ninject.dll
+D:\Andrey Bonda\Dropbox\Task\Task.Infrastructure\obj\Debug\Task.Infrastructure.csprojResolveAssemblyReference.cache
+D:\Andrey Bonda\Dropbox\Task\Task.Infrastructure\obj\Debug\Task.Infrastructure.dll
+D:\Andrey Bonda\Dropbox\Task\Task.Infrastructure\obj\Debug\Task.Infrastructure.pdb
+C:\Users\Andrei_Bonda\Dropbox\Task\Task.Infrastructure\bin\Debug\Task.DALModels.dll
+C:\Users\Andrei_Bonda\Dropbox\Task\Task.Infrastructure\bin\Debug\Task.DALModels.pdb
+D:\Andrey Bonda\Dropbox\Task\Task.Infrastructure\bin\Debug\Task.DALModels.dll
+D:\Andrey Bonda\Dropbox\Task\Task.Infrastructure\bin\Debug\Task.DALModels.pdb
+C:\Users\AndreyBonda\Dropbox\Task\Task.Infrastructure\bin\Debug\Task.Infrastructure.dll
+C:\Users\AndreyBonda\Dropbox\Task\Task.Infrastructure\bin\Debug\Task.Infrastructure.pdb
+C:\Users\AndreyBonda\Dropbox\Task\Task.Infrastructure\bin\Debug\Ninject.dll
+C:\Users\AndreyBonda\Dropbox\Task\Task.Infrastructure\bin\Debug\Task.DALModels.dll
+C:\Users\AndreyBonda\Dropbox\Task\Task.Infrastructure\bin\Debug\Task.DALModels.pdb
+C:\Users\AndreyBonda\Dropbox\Task\Task.Infrastructure\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\AndreyBonda\Dropbox\Task\Task.Infrastructure\obj\Debug\Task.Infrastructure.dll
+C:\Users\AndreyBonda\Dropbox\Task\Task.Infrastructure\obj\Debug\Task.Infrastructure.pdb
+C:\Users\Andrei_Bonda\Dropbox\Task\Task.Infrastructure\bin\Debug\NLog.dll
+C:\Users\Andrei_Bonda\Dropbox\Task\Task.Infrastructure\bin\Debug\NLog.xml
+D:\Andrey Bonda\Dropbox\Task\Task.Infrastructure\bin\Debug\NLog.dll
+D:\Andrey Bonda\Dropbox\Task\Task.Infrastructure\bin\Debug\NLog.xml

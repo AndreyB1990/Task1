@@ -1,0 +1,49 @@
+C:\Users\Andrei_Bonda\Dropbox\Task\Task.Repositories\bin\Debug\Task.Repositories.dll
+C:\Users\Andrei_Bonda\Dropbox\Task\Task.Repositories\bin\Debug\Task.Repositories.pdb
+C:\Users\Andrei_Bonda\Dropbox\Task\Task.Repositories\bin\Debug\FluentNHibernate.dll
+C:\Users\Andrei_Bonda\Dropbox\Task\Task.Repositories\bin\Debug\NHibernate.dll
+C:\Users\Andrei_Bonda\Dropbox\Task\Task.Repositories\bin\Debug\Ninject.dll
+C:\Users\Andrei_Bonda\Dropbox\Task\Task.Repositories\bin\Debug\Task.DALModels.dll
+C:\Users\Andrei_Bonda\Dropbox\Task\Task.Repositories\bin\Debug\Iesi.Collections.dll
+C:\Users\Andrei_Bonda\Dropbox\Task\Task.Repositories\bin\Debug\Task.DALModels.pdb
+C:\Users\Andrei_Bonda\Dropbox\Task\Task.Repositories\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Andrei_Bonda\Dropbox\Task\Task.Repositories\obj\Debug\Task.Repositories.dll
+C:\Users\Andrei_Bonda\Dropbox\Task\Task.Repositories\obj\Debug\Task.Repositories.pdb
+C:\Users\Andrei_Bonda\Dropbox\Task\Task.Repositories\bin\Debug\NHibernate.ByteCode.Castle.dll
+C:\Users\Andrei_Bonda\Dropbox\Task\Task.Repositories\bin\Debug\Castle.Core.dll
+D:\Andrey Bonda\Dropbox\Task\Task.Repositories\bin\Debug\Task.Repositories.dll
+D:\Andrey Bonda\Dropbox\Task\Task.Repositories\bin\Debug\Task.Repositories.pdb
+D:\Andrey Bonda\Dropbox\Task\Task.Repositories\bin\Debug\FluentNHibernate.dll
+D:\Andrey Bonda\Dropbox\Task\Task.Repositories\bin\Debug\NHibernate.ByteCode.Castle.dll
+D:\Andrey Bonda\Dropbox\Task\Task.Repositories\bin\Debug\NHibernate.dll
+D:\Andrey Bonda\Dropbox\Task\Task.Repositories\bin\Debug\Ninject.dll
+D:\Andrey Bonda\Dropbox\Task\Task.Repositories\bin\Debug\Task.DALModels.dll
+D:\Andrey Bonda\Dropbox\Task\Task.Repositories\bin\Debug\Task.Infrastructure.dll
+D:\Andrey Bonda\Dropbox\Task\Task.Repositories\bin\Debug\Iesi.Collections.dll
+D:\Andrey Bonda\Dropbox\Task\Task.Repositories\bin\Debug\Castle.Core.dll
+D:\Andrey Bonda\Dropbox\Task\Task.Repositories\bin\Debug\Task.DALModels.pdb
+D:\Andrey Bonda\Dropbox\Task\Task.Repositories\bin\Debug\Task.Infrastructure.pdb
+D:\Andrey Bonda\Dropbox\Task\Task.Repositories\obj\Debug\Task.Repositories.csprojResolveAssemblyReference.cache
+D:\Andrey Bonda\Dropbox\Task\Task.Repositories\obj\Debug\Task.Repositories.dll
+D:\Andrey Bonda\Dropbox\Task\Task.Repositories\obj\Debug\Task.Repositories.pdb
+C:\Users\Andrei_Bonda\Dropbox\Task\Task.Repositories\bin\Debug\Task.Infrastructure.dll
+C:\Users\Andrei_Bonda\Dropbox\Task\Task.Repositories\bin\Debug\Task.Infrastructure.pdb
+C:\Users\AndreyBonda\Dropbox\Task\Task.Repositories\bin\Debug\Task.Repositories.dll
+C:\Users\AndreyBonda\Dropbox\Task\Task.Repositories\bin\Debug\Task.Repositories.pdb
+C:\Users\AndreyBonda\Dropbox\Task\Task.Repositories\bin\Debug\FluentNHibernate.dll
+C:\Users\AndreyBonda\Dropbox\Task\Task.Repositories\bin\Debug\NHibernate.ByteCode.Castle.dll
+C:\Users\AndreyBonda\Dropbox\Task\Task.Repositories\bin\Debug\NHibernate.dll
+C:\Users\AndreyBonda\Dropbox\Task\Task.Repositories\bin\Debug\Ninject.dll
+C:\Users\AndreyBonda\Dropbox\Task\Task.Repositories\bin\Debug\Task.DALModels.dll
+C:\Users\AndreyBonda\Dropbox\Task\Task.Repositories\bin\Debug\Task.Infrastructure.dll
+C:\Users\AndreyBonda\Dropbox\Task\Task.Repositories\bin\Debug\Iesi.Collections.dll
+C:\Users\AndreyBonda\Dropbox\Task\Task.Repositories\bin\Debug\Castle.Core.dll
+C:\Users\AndreyBonda\Dropbox\Task\Task.Repositories\bin\Debug\Task.DALModels.pdb
+C:\Users\AndreyBonda\Dropbox\Task\Task.Repositories\bin\Debug\Task.Infrastructure.pdb
+C:\Users\AndreyBonda\Dropbox\Task\Task.Repositories\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\AndreyBonda\Dropbox\Task\Task.Repositories\obj\Debug\Task.Repositories.dll
+C:\Users\AndreyBonda\Dropbox\Task\Task.Repositories\obj\Debug\Task.Repositories.pdb
+C:\Users\Andrei_Bonda\Dropbox\Task\Task.Repositories\bin\Debug\NLog.dll
+C:\Users\Andrei_Bonda\Dropbox\Task\Task.Repositories\bin\Debug\NLog.xml
+D:\Andrey Bonda\Dropbox\Task\Task.Repositories\bin\Debug\NLog.dll
+D:\Andrey Bonda\Dropbox\Task\Task.Repositories\bin\Debug\NLog.xml

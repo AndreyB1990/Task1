@@ -1,0 +1,16 @@
+﻿@model Task.Web.Models.AccountModels.LogOnModel
+@{
+    Layout = null;
+}
+<div id="login">
+    @using (Html.BeginForm("LogOn", "Account"))
+    {
+        <div>
+            @Html.EditorForModel()
+            <div class="text-center">
+                <input type="submit" class="button" value="Enter" />
+                <input type="button" id="button-cancel" class="button" value="Cancel" />
+            </div>
+        </div>
+    }
+</div>

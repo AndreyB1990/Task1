@@ -1,0 +1,9 @@
+C:\Users\Andrei_Bonda\Dropbox\Task\Task.BLLModels\bin\Debug\Task.BLLModels.dll
+C:\Users\Andrei_Bonda\Dropbox\Task\Task.BLLModels\bin\Debug\Task.BLLModels.pdb
+C:\Users\Andrei_Bonda\Dropbox\Task\Task.BLLModels\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Andrei_Bonda\Dropbox\Task\Task.BLLModels\obj\Debug\Task.BLLModels.dll
+C:\Users\Andrei_Bonda\Dropbox\Task\Task.BLLModels\obj\Debug\Task.BLLModels.pdb
+D:\Andrey Bonda\Dropbox\Task\Task.BLLModels\bin\Debug\Task.BLLModels.dll
+D:\Andrey Bonda\Dropbox\Task\Task.BLLModels\bin\Debug\Task.BLLModels.pdb
+D:\Andrey Bonda\Dropbox\Task\Task.BLLModels\obj\Debug\Task.BLLModels.dll
+D:\Andrey Bonda\Dropbox\Task\Task.BLLModels\obj\Debug\Task.BLLModels.pdb

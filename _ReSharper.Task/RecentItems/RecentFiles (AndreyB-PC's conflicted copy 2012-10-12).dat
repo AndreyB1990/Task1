@@ -1,0 +1,66 @@
+﻿<RecentFiles>
+  <RecentFiles>
+    <File id="0862A143-C7C1-422D-B896-BC08984165EC/d:Ninject/f:Locator.cs" caret="0" fromTop="0" />
+    <File id="6C6A97FB-271D-4214-A1EB-8BE6DD3A1ACB/d:NinjectModules/f:RepositoryModule.cs" caret="0" fromTop="0" />
+    <File id="6C6A97FB-271D-4214-A1EB-8BE6DD3A1ACB/d:Interfaces/f:IBaseRepository.cs" caret="517" fromTop="19" />
+    <File id="6C6A97FB-271D-4214-A1EB-8BE6DD3A1ACB/d:NHibernate/f:OperatorProjection.cs" caret="1067" fromTop="0" />
+    <File id="0E26CC95-69E5-4410-A6C7-54508296ED69/d:Repositories/f:GirlRepositoryTest.cs" caret="1906" fromTop="50" />
+    <File id="0E26CC95-69E5-4410-A6C7-54508296ED69/f:InMemoryDatabaseTest.cs" caret="0" fromTop="0" />
+    <File id="0E26CC95-69E5-4410-A6C7-54508296ED69/f:MoqHelper.cs" caret="129" fromTop="0" />
+    <File id="6C6A97FB-271D-4214-A1EB-8BE6DD3A1ACB/d:NHibernate/f:SessionFactory.cs" caret="0" fromTop="0" />
+    <File id="6C6A97FB-271D-4214-A1EB-8BE6DD3A1ACB/f:GirlRepository.cs" caret="954" fromTop="8" />
+    <File id="5190949A-E31A-49CB-B089-5C2A1D2A5724/f:Girl.cs" caret="306" fromTop="13" />
+    <File id="0862A143-C7C1-422D-B896-BC08984165EC/f:Constants.cs" caret="282" fromTop="8" />
+    <File id="5FE0A683-5E46-44A3-AB5F-65BC463B85C1/d:Views/d:Account/f:Register.cshtml" caret="360" fromTop="12" />
+    <File id="5FE0A683-5E46-44A3-AB5F-65BC463B85C1/d:Views/d:Account/f:LogOn.cshtml" caret="528" fromTop="14" />
+    <File id="5FE0A683-5E46-44A3-AB5F-65BC463B85C1/d:Views/d:Shared/f:_LogOnPartial.cshtml" caret="811" fromTop="21" />
+    <File id="5FE0A683-5E46-44A3-AB5F-65BC463B85C1/d:Views/d:Shared/d:EditorTemplates/f:RegisterModel.cshtml" caret="36" fromTop="0" />
+    <File id="5FE0A683-5E46-44A3-AB5F-65BC463B85C1/d:Views/d:Shared/f:_Layout.cshtml" caret="7883" fromTop="5" />
+    <File id="518DA726-FBCD-4A7A-8969-DC9DE2DFE6C3/d:Interfaces/f:IRoleService.cs" caret="94" fromTop="4" />
+    <File id="6C6A97FB-271D-4214-A1EB-8BE6DD3A1ACB/f:RoleRepository.cs" caret="926" fromTop="29" />
+    <File id="6C6A97FB-271D-4214-A1EB-8BE6DD3A1ACB/d:Abstract/f:NHibernateRepository.cs" caret="477" fromTop="0" />
+    <File id="6C6A97FB-271D-4214-A1EB-8BE6DD3A1ACB/d:NHibernate/f:CriteriaExtensions.cs" caret="375" fromTop="13" />
+    <File id="5FE0A683-5E46-44A3-AB5F-65BC463B85C1/d:Views/f:_ViewStart.cshtml" caret="8" fromTop="1" />
+    <File id="5FE0A683-5E46-44A3-AB5F-65BC463B85C1/d:Views/d:Account/f:AdminSetup.cshtml" caret="48" fromTop="3" />
+    <File id="5FE0A683-5E46-44A3-AB5F-65BC463B85C1/d:Models/f:AccountModels.cs" caret="1661" fromTop="21" />
+    <File id="5FE0A683-5E46-44A3-AB5F-65BC463B85C1/d:Views/d:Shared/f:_AccountPartial.cshtml" caret="461" fromTop="15" />
+    <File id="5FE0A683-5E46-44A3-AB5F-65BC463B85C1/d:Controllers/f:AccountController.cs" caret="2772" fromTop="25" />
+    <File id="518DA726-FBCD-4A7A-8969-DC9DE2DFE6C3/f:RoleService.cs" caret="952" fromTop="10" />
+    <File id="6C6A97FB-271D-4214-A1EB-8BE6DD3A1ACB/d:Mappings/f:RoleMap.cs" caret="0" fromTop="0" />
+    <File id="6C6A97FB-271D-4214-A1EB-8BE6DD3A1ACB/d:Mappings/f:UserMap.cs" caret="672" fromTop="21" />
+    <File id="5190949A-E31A-49CB-B089-5C2A1D2A5724/f:User.cs" caret="1039" fromTop="7" />
+    <File id="5190949A-E31A-49CB-B089-5C2A1D2A5724/f:Role.cs" caret="403" fromTop="12" />
+  </RecentFiles>
+  <RecentEdits>
+    <File id="6C6A97FB-271D-4214-A1EB-8BE6DD3A1ACB/d:Interfaces/f:IBaseRepository.cs" caret="138" fromTop="6" />
+    <File id="6C6A97FB-271D-4214-A1EB-8BE6DD3A1ACB/f:UserRepository.cs" caret="0" fromTop="0" />
+    <File id="6C6A97FB-271D-4214-A1EB-8BE6DD3A1ACB/f:RoleRepository.cs" caret="0" fromTop="0" />
+    <File id="6C6A97FB-271D-4214-A1EB-8BE6DD3A1ACB/d:NinjectModules/f:RepositoryModule.cs" caret="377" fromTop="11" />
+    <File id="6C6A97FB-271D-4214-A1EB-8BE6DD3A1ACB/d:Mappings/f:GirlMap.cs" caret="110" fromTop="5" />
+    <File id="6C6A97FB-271D-4214-A1EB-8BE6DD3A1ACB/d:Mappings/f:RoleMap.cs" caret="110" fromTop="5" />
+    <File id="6C6A97FB-271D-4214-A1EB-8BE6DD3A1ACB/d:Mappings/f:UserMap.cs" caret="110" fromTop="5" />
+    <File id="6C6A97FB-271D-4214-A1EB-8BE6DD3A1ACB/d:Interfaces/f:IGirlRepository.cs" caret="147" fromTop="5" />
+    <File id="6C6A97FB-271D-4214-A1EB-8BE6DD3A1ACB/d:Interfaces/f:IRoleRepository.cs" caret="127" fromTop="4" />
+    <File id="6C6A97FB-271D-4214-A1EB-8BE6DD3A1ACB/d:Interfaces/f:IUserRepository.cs" caret="127" fromTop="4" />
+    <File id="0862A143-C7C1-422D-B896-BC08984165EC/d:Ninject/f:Locator.cs" caret="0" fromTop="0" />
+    <File id="6C6A97FB-271D-4214-A1EB-8BE6DD3A1ACB/d:Abstract/f:NHibernateRepository.cs" caret="574" fromTop="13" />
+    <File id="5190949A-E31A-49CB-B089-5C2A1D2A5724/f:Girl.cs" caret="434" fromTop="18" />
+    <File id="6C6A97FB-271D-4214-A1EB-8BE6DD3A1ACB/d:NHibernate/f:OperatorProjection.cs" caret="1067" fromTop="16" />
+    <File id="6C6A97FB-271D-4214-A1EB-8BE6DD3A1ACB/f:GirlRepository.cs" caret="2490" fromTop="6" />
+    <File id="0E26CC95-69E5-4410-A6C7-54508296ED69/d:Repositories/f:GirlRepositoryTest.cs" caret="1928" fromTop="18" />
+    <File id="0E26CC95-69E5-4410-A6C7-54508296ED69/f:InMemoryDatabaseTest.cs" caret="39" fromTop="1" />
+    <File id="0E26CC95-69E5-4410-A6C7-54508296ED69/f:MoqHelper.cs" caret="95" fromTop="4" />
+    <File id="5FE0A683-5E46-44A3-AB5F-65BC463B85C1/d:Views/d:Shared/f:_AccountPartial.cshtml" caret="510" fromTop="18" />
+    <File id="5FE0A683-5E46-44A3-AB5F-65BC463B85C1/d:Models/f:AccountModels.cs" caret="1661" fromTop="21" />
+    <File id="0862A143-C7C1-422D-B896-BC08984165EC/f:Constants.cs" caret="282" fromTop="8" />
+    <File id="5FE0A683-5E46-44A3-AB5F-65BC463B85C1/d:Views/d:Shared/f:_Layout.cshtml" caret="8283" fromTop="18" />
+    <File id="5FE0A683-5E46-44A3-AB5F-65BC463B85C1/d:Views/d:Account/f:Register.cshtml" caret="360" fromTop="12" />
+    <File id="5FE0A683-5E46-44A3-AB5F-65BC463B85C1/d:Views/d:Account/f:AdminSetup.cshtml" caret="398" fromTop="14" />
+    <File id="5FE0A683-5E46-44A3-AB5F-65BC463B85C1/d:Views/d:Shared/f:_LogOnPartial.cshtml" caret="811" fromTop="21" />
+    <File id="5FE0A683-5E46-44A3-AB5F-65BC463B85C1/d:Views/d:Shared/d:EditorTemplates/f:RegisterModel.cshtml" caret="36" fromTop="0" />
+    <File id="518DA726-FBCD-4A7A-8969-DC9DE2DFE6C3/f:RoleService.cs" caret="1952" fromTop="25" />
+    <File id="5FE0A683-5E46-44A3-AB5F-65BC463B85C1/d:Controllers/f:AccountController.cs" caret="2791" fromTop="26" />
+    <File id="5190949A-E31A-49CB-B089-5C2A1D2A5724/f:User.cs" caret="1039" fromTop="7" />
+    <File id="5190949A-E31A-49CB-B089-5C2A1D2A5724/f:Role.cs" caret="550" fromTop="16" />
+  </RecentEdits>
+</RecentFiles>

@@ -1,0 +1,42 @@
+﻿@model Task.Web.Models.AccountModels.RegisterModel
+<div class="text-center">
+    @Html.ValidationSummary(true)
+    <h1>
+        Register</h1>
+</div>
+<div class="cell">
+    <div class="editor-label">
+        @Html.LabelFor(m => m.UserName)
+    </div>
+    <div class="text-field editor-field">
+        @Html.EditorFor(m => m.UserName, new { @class = "editor" })
+        @Html.ValidationMessageFor(m => m.UserName, null, new { @class = "display-none" })
+    </div>
+</div>
+<div class="cell">
+    <div class="editor-label">
+        @Html.LabelFor(m => m.Email)
+    </div>
+    <div class="text-field editor-field">
+        @Html.EditorFor(m => m.Email, new { @class = "editor" })
+        @Html.ValidationMessageFor(m => m.Email, null, new { @class = "display-none" })
+    </div>
+</div>
+<div class="cell">
+    <div class="editor-label">
+        @Html.LabelFor(m => m.Password)
+    </div>
+    <div class="text-field editor-field">
+        @Html.PasswordFor(m => m.Password, new { @class = "editor" })
+        @Html.ValidationMessageFor(m => m.Password, null, new { @class = "display-none" })
+    </div>
+</div>
+<div class="cell">
+    <div class="editor-label">
+        @Html.LabelFor(m => m.ConfirmPassword)
+    </div>
+    <div class="text-field editor-field">
+        @Html.PasswordFor(m => m.ConfirmPassword, new { @class = "editor" })
+        @Html.ValidationMessageFor(m => m.ConfirmPassword, null, new { @class = "display-none" })
+    </div>
+</div>

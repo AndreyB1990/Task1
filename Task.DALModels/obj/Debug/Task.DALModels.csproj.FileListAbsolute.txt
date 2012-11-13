@@ -1,0 +1,19 @@
+C:\Users\Andrei_Bonda\Dropbox\Task\Task.DALModels\bin\Debug\Task.DALModels.dll
+C:\Users\Andrei_Bonda\Dropbox\Task\Task.DALModels\bin\Debug\Task.DALModels.pdb
+C:\Users\Andrei_Bonda\Dropbox\Task\Task.DALModels\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Andrei_Bonda\Dropbox\Task\Task.DALModels\obj\Debug\Task.DALModels.dll
+C:\Users\Andrei_Bonda\Dropbox\Task\Task.DALModels\obj\Debug\Task.DALModels.pdb
+D:\Andrey Bonda\Dropbox\Task\Task.DALModels\bin\Debug\Task.DALModels.dll
+D:\Andrey Bonda\Dropbox\Task\Task.DALModels\bin\Debug\Task.DALModels.pdb
+D:\Andrey Bonda\Dropbox\Task\Task.DALModels\obj\Debug\Task.DALModels.dll
+D:\Andrey Bonda\Dropbox\Task\Task.DALModels\obj\Debug\Task.DALModels.pdb
+D:\Andrey Bonda\Dropbox\Task\Task.DALModels\obj\Debug\Task.DALModels.csprojResolveAssemblyReference.cache
+C:\Users\AndreyBonda\Dropbox\Task\Task.DALModels\bin\Debug\Task.DALModels.dll
+C:\Users\AndreyBonda\Dropbox\Task\Task.DALModels\bin\Debug\Task.DALModels.pdb
+C:\Users\AndreyBonda\Dropbox\Task\Task.DALModels\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\AndreyBonda\Dropbox\Task\Task.DALModels\obj\Debug\Task.DALModels.dll
+C:\Users\AndreyBonda\Dropbox\Task\Task.DALModels\obj\Debug\Task.DALModels.pdb
+C:\Users\Andrei_Bonda\Dropbox\Task\Task.DALModels\bin\Debug\Task.Metadata.dll
+C:\Users\Andrei_Bonda\Dropbox\Task\Task.DALModels\bin\Debug\Task.Metadata.pdb
+D:\Andrey Bonda\Dropbox\Task\Task.DALModels\bin\Debug\Task.Metadata.dll
+D:\Andrey Bonda\Dropbox\Task\Task.DALModels\bin\Debug\Task.Metadata.pdb

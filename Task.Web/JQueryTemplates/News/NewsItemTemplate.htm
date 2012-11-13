@@ -1,0 +1,16 @@
+﻿<div class="news-item">
+    <hr class="first-news-hr" />
+    <hr class="second-news-hr" />
+    <h2>
+        ${Title}</h2>
+    <div class="news-item-main">
+        <span class="news-item-date">${GetDate(Date)}</span> <span class="news-item-description">
+            ${Description}</span>
+    </div>
+</div>
+{{if $item.isAdmin == 'True'}}
+<div id="news-item-admin" data-id="${Id}">
+    <a href="/News/Edit/${Id}" class="float-left">Edit</a> <a href="#" class="delete-news-item float-right">
+        Delete</a>
+</div>
+{{/if}}

@@ -1,0 +1,37 @@
+﻿@model Task.DALModels.Girl
+<div class="cell">
+    <div class="editor-label">
+        @Html.LabelFor(m => m.Name)
+    </div>
+    <div class="text-field editor-field">
+        @Html.EditorFor(m => m.Name, new { @class = "editor" }) @Html.ValidationMessageFor(m
+        => m.Name, null, new { @class = "display-none" })
+    </div>
+</div>
+<div class="cell">
+    <div class="editor-label">
+        @Html.LabelFor(m => m.BirthDate)
+    </div>
+    <div class="text-field editor-field">
+        @Html.EditorFor(m => m.BirthDate, new { @class = "editor" }) @Html.ValidationMessageFor(m
+=> m.BirthDate, null, new { @class = "display-none" })
+    </div>
+</div>
+<div class="cell">
+    <div class="editor-label">
+        @Html.LabelFor(m => m.Height)
+    </div>
+    <div class="text-field editor-field">
+        @Html.EditorFor(m => m.Height, new { @class = "editor positive-double" }) @Html.ValidationMessageFor(m
+=> m.Height, null, new { @class = "display-none" })
+    </div>
+</div>
+<div class="cell">
+    <div class="editor-label">
+        @Html.LabelFor(m => m.Weight)
+    </div>
+    <div class="text-field editor-field">
+        @Html.EditorFor(m => m.Weight, new { @class = "editor positive-double" }) @Html.ValidationMessageFor(m
+=> m.Weight, null, new { @class = "display-none" })
+    </div>
+</div>

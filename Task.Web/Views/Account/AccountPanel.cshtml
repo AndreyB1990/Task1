@@ -1,0 +1,19 @@
+﻿@{
+    Layout = null;
+
+}
+<div id="account-panel">
+@if(Request.IsAuthenticated) { 
+    @: <div>
+    <span id="account-panel-auth"> Hello, <strong>@User.Identity.Name</strong>! </span>
+                                 @Html.ActionLink("Log Off", "LogOff", "Account")
+    @: </div>
+    }
+else
+{
+    @: <div>
+       <a href="#" id="button-login">Log On</a>
+       @Html.ActionLink("Register", "Register", "Account", new { }, new { @id = "button-register" })
+    @: </div>
+}
+</div>

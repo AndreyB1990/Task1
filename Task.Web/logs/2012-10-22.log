@@ -1,0 +1,9 @@
+2012-10-22 09:06:53.8164 INFO Task Components are initialized
+2012-10-22 09:43:45.5051 INFO Task Components are initialized
+2012-10-22 10:14:41.1694 INFO Task Components are initialized
+2012-10-22 10:40:53.5879 INFO Task Components are initialized
+2012-10-22 18:35:40.8729 INFO Task Components are initialized
+2012-10-22 18:42:33.7012 INFO Task Components are initialized
+2012-10-22 18:42:37.7216 INFO Task Error with NHibernate sessionFactory
+2012-10-22 18:43:29.9548 INFO Task Components are initialized
+2012-10-22 18:43:45.9634 INFO Task Error with NHibernate session

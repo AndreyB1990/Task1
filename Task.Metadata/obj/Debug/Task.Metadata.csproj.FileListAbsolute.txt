@@ -1,0 +1,5 @@
+C:\Users\Andrei_Bonda\Dropbox\Task\Task.Metadata\bin\Debug\Task.Metadata.dll
+C:\Users\Andrei_Bonda\Dropbox\Task\Task.Metadata\bin\Debug\Task.Metadata.pdb
+C:\Users\Andrei_Bonda\Dropbox\Task\Task.Metadata\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Andrei_Bonda\Dropbox\Task\Task.Metadata\obj\Debug\Task.Metadata.dll
+C:\Users\Andrei_Bonda\Dropbox\Task\Task.Metadata\obj\Debug\Task.Metadata.pdb

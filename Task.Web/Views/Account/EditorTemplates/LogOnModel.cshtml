@@ -1,0 +1,34 @@
+﻿@model Task.Web.Models.AccountModels.LogOnModel
+<div class="text-center">
+    <h1>
+        Log On</h1>
+    <p class="logon-text">
+        Click @Html.ActionLink("Register", "Register", "Account", new { }, new { @class = "darkred-color" })
+        ,if you are not registered on the site.
+    </p>
+</div>
+<div class="text-center">
+    @Html.ValidationSummary(true, "Login was unsuccessful. Please correct the errors and try again.")
+</div>
+<div class="cell">
+    <div class="editor-label">
+        @Html.LabelFor(m => m.UserName)
+    </div>
+    <div class="text-field editor-field">
+        @Html.EditorFor(m => m.UserName, new { @class = "editor" })
+        @Html.ValidationMessageFor(m => m.UserName, null, new { @class = "display-none" })
+    </div>
+</div>
+<div class="cell">
+    <div class="editor-label">
+        @Html.LabelFor(m => m.Password)
+    </div>
+    <div class="text-field editor-field">
+        @Html.PasswordFor(m => m.Password, new { @class = "editor" })
+        @Html.ValidationMessageFor(m => m.Password, null, new { @class = "display-none" })
+    </div>
+</div>
+<div class="editor-field">
+    @Html.CheckBoxFor(m => m.RememberMe)
+    @Html.LabelFor(m => m.RememberMe)
+</div>

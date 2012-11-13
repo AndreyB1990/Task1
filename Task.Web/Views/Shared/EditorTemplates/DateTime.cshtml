@@ -1,0 +1,11 @@
+﻿@model DateTime?
+           
+@Html.TextBox("", String.Format("{0:MM/dd/yyyy}", (Model == DateTime.MinValue) ? null : Model))
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        $("#@ViewData.ModelMetadata.PropertyName").datepicker();
+        $("#@ViewData.ModelMetadata.PropertyName").datepicker("option", "changeYear", true);
+        $("#@ViewData.ModelMetadata.PropertyName").datepicker("option", "yearRange", "-50:+0");
+    });
+</script>

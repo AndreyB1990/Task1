@@ -1,0 +1,58 @@
+﻿@using Task.Infrastructure
+@{
+    ViewBag.Title = "Index";
+    if (IsAjax)
+    {
+        Layout = null;
+    }
+}
+<input id="girls-items-info" type="hidden" data-info='{"Page": "@ViewBag.Page", "IsBeautiful": "@ViewBag.IsBeautiful", "UserIsAdmin": "@ViewBag.userIsAdmin", "CountOfGirls": "@ViewBag.CountOfGirls", "ItemsPerPage": "@Constants.GIRLS_PAGER_LINKS_PER_PAGE" }'/>
+<script type="text/javascript" src="@Url.Content("~/Scripts/jQueryTemplateConfigs/girls-items.js")"></script>
+<script type="text/javascript" src="@Url.Content("~/Scripts/Pager/girlsPager.js")"></script>
+
+<h1>
+    Table Girls</h1>
+<div id="table-girls">
+    @if (ViewBag.userIsAdmin)
+    {
+        <div class="text-center">  
+            <a href="@Url.Action("Create")">Create Girl</a>
+        </div>
+    }
+    <table>
+        <tbody>
+            <tr id="table-girls-tr-title">
+                <th>
+                    Name
+                </th>
+                <th>
+                    Factor
+                </th>
+                <th>
+                    Age
+                </th>
+                @if (ViewBag.userIsAdmin)
+                {
+                    <th>
+                        Edit
+                    </th>
+                    <th>
+                        Delete
+                    </th>
+                }
+            </tr>
+        </tbody>
+    </table>
+    <div id="girls-button" class="text-right">
+        @if (ViewBag.IsBeautiful == false)
+        {
+            <input id="beautiful-girls-button" type="button" class="button" value="Beautiful Girls" />
+        }
+        else
+        {
+            <input id="all-girls-button" type="button" class="button" value="All Girls" />
+        }
+    </div>
+    <div class="pager">
+    </div>
+</div>

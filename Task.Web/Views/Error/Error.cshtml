@@ -1,0 +1,26 @@
+﻿@model HandleErrorInfo
+@{
+    ViewBag.Title = "Error";
+    Layout = null;
+}
+<html>
+<head>
+    <title></title>
+    <link href="@Url.Content("~/Content/Site.css")" rel="stylesheet" type="text/css" />
+</head>
+<body class="error-body">
+    <div>
+        <h1>
+            Error @Response.StatusCode</h1>
+        <div class="outer-center">
+            <div class="inner-center">
+                <img src="@Url.Content("~/Content/images/notfound.png")" alt="Error" />
+            </div>
+        </div>
+        <div class="error-message text-center clear">
+            <h2>
+                Server error. You can go back to @Html.ActionLink("Main Page", "Index", "Home")</h2>
+        </div>
+    </div>
+</body>
+</html>

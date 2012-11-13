@@ -1,0 +1,37 @@
+﻿@model Task.DALModels.News      
+<div class="cell">
+    <div class="editor-label">
+        @Html.LabelFor(m => m.Title)
+    </div>
+    <div class="text-field editor-field">
+        @Html.EditorFor(m => m.Title, new { @class = "editor" }) @Html.ValidationMessageFor(m
+=> m.Title, null, new { @class = "display-none" })
+    </div>
+</div>
+<div class="cell">
+    <div class="editor-label">
+        @Html.LabelFor(m => m.Date)
+    </div>
+    <div class="text-field editor-field">
+        @Html.EditorFor(m => m.Date, new { @class = "editor" }) @Html.ValidationMessageFor(m
+=> m.Date, null, new { @class = "display-none" })
+    </div>
+</div>
+<div class="cell">
+    <div class="editor-label">
+        @Html.LabelFor(m => m.ShortDescription)
+    </div>
+    <div class="text-field editor-field">
+        @Html.EditorFor(m => m.ShortDescription, new { @class = "editor" }) @Html.ValidationMessageFor(m
+=> m.ShortDescription, null, new { @class = "display-none" })
+    </div>
+</div>
+<div class="cell">
+    <div class="editor-label">
+        @Html.LabelFor(m => m.Description)
+    </div>
+    <div class="text-field editor-field">
+        @Html.TextAreaFor(m => m.Description, new { rows = 5 }) @Html.ValidationMessageFor(m
+=> m.Description, null, new { @class = "display-none" })
+    </div>
+</div>

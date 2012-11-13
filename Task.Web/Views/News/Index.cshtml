@@ -1,0 +1,18 @@
+﻿@using Task.Infrastructure
+@{
+    ViewBag.Title = "Index";
+    if (IsAjax)
+    {
+        Layout = null;
+    }
+}
+<input id="news-items-info" type="hidden" data-info='{"Page": "@ViewBag.Page", "CountOfNews": "@ViewBag.CountOfNews", "ItemsPerPage": "@Constants.NEWS_PAGER_LINKS_PER_PAGE" }'/>
+<script type="text/javascript" src="@Url.Content("~/Scripts/jQueryTemplateConfigs/news-items.js")"></script>
+<script type="text/javascript" src="@Url.Content("~/Scripts/Pager/newsPager.js")"></script>
+
+<h1>
+    News</h1>
+<div id="news-items-container">
+    </div>
+    <div class="pager">
+    </div>

@@ -1,0 +1,13 @@
+﻿<li data-id="${Id}"><a href='/News/Details/${Id}'>
+    <img class='news-date-img' src='/Content/images/arrow.jpg' alt='Date' />
+    <p class='news-date'>
+        <span>${GetDate(Date)} </span>
+    </p>
+    <p class='news-title'>
+        ${Title}
+    </p>
+    <p class='news-short-description'>
+        ${ShortDescription}
+    </p>
+</a>{{if $item.isAdmin == 'True'}} <a href="/News/Edit/${Id}" class="float-left">Edit</a>
+    <a href="#" class="delete-news-panel-item float-right">Delete</a> {{/if}} </li>

@@ -1,0 +1,66 @@
+C:\Users\Andrei_Bonda\Dropbox\Task\Task.Web\bin\Task.Web.dll
+C:\Users\Andrei_Bonda\Dropbox\Task\Task.Web\bin\Task.Web.pdb
+C:\Users\Andrei_Bonda\Dropbox\Task\Task.Web\bin\EntityFramework.dll
+C:\Users\Andrei_Bonda\Dropbox\Task\Task.Web\bin\EntityFramework.xml
+C:\Users\Andrei_Bonda\Dropbox\Task\Task.Web\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Andrei_Bonda\Dropbox\Task\Task.Web\obj\Debug\Task.Web.dll
+C:\Users\Andrei_Bonda\Dropbox\Task\Task.Web\obj\Debug\Task.Web.pdb
+C:\Users\Andrei_Bonda\Dropbox\Task\Task.Web\bin\Task.DALModels.dll
+C:\Users\Andrei_Bonda\Dropbox\Task\Task.Web\bin\Task.DALModels.pdb
+D:\Andrey Bonda\Dropbox\Task\Task.Web\bin\Task.Web.dll
+D:\Andrey Bonda\Dropbox\Task\Task.Web\bin\Task.Web.pdb
+D:\Andrey Bonda\Dropbox\Task\Task.Web\bin\EntityFramework.dll
+D:\Andrey Bonda\Dropbox\Task\Task.Web\bin\Task.DALModels.dll
+D:\Andrey Bonda\Dropbox\Task\Task.Web\bin\Task.DALModels.pdb
+D:\Andrey Bonda\Dropbox\Task\Task.Web\bin\EntityFramework.xml
+D:\Andrey Bonda\Dropbox\Task\Task.Web\obj\Debug\Task.Web.csprojResolveAssemblyReference.cache
+D:\Andrey Bonda\Dropbox\Task\Task.Web\obj\Debug\Task.Web.dll
+D:\Andrey Bonda\Dropbox\Task\Task.Web\obj\Debug\Task.Web.pdb
+C:\Users\Andrei_Bonda\Dropbox\Task\Task.Web\bin\Ninject.dll
+C:\Users\Andrei_Bonda\Dropbox\Task\Task.Web\bin\Task.Repositories.dll
+C:\Users\Andrei_Bonda\Dropbox\Task\Task.Web\bin\Task.Services.dll
+C:\Users\Andrei_Bonda\Dropbox\Task\Task.Web\bin\NHibernate.dll
+C:\Users\Andrei_Bonda\Dropbox\Task\Task.Web\bin\FluentNHibernate.dll
+C:\Users\Andrei_Bonda\Dropbox\Task\Task.Web\bin\Task.Infrastructure.dll
+C:\Users\Andrei_Bonda\Dropbox\Task\Task.Web\bin\AutoMapper.dll
+C:\Users\Andrei_Bonda\Dropbox\Task\Task.Web\bin\Iesi.Collections.dll
+C:\Users\Andrei_Bonda\Dropbox\Task\Task.Web\bin\Task.Repositories.pdb
+C:\Users\Andrei_Bonda\Dropbox\Task\Task.Web\bin\Task.Services.pdb
+C:\Users\Andrei_Bonda\Dropbox\Task\Task.Web\bin\Task.Infrastructure.pdb
+C:\Users\AndreyBonda\Dropbox\Task\Task.Web\bin\Task.Web.dll
+C:\Users\AndreyBonda\Dropbox\Task\Task.Web\bin\Task.Web.pdb
+C:\Users\AndreyBonda\Dropbox\Task\Task.Web\bin\EntityFramework.dll
+C:\Users\AndreyBonda\Dropbox\Task\Task.Web\bin\Ninject.dll
+C:\Users\AndreyBonda\Dropbox\Task\Task.Web\bin\Task.BLLModels.dll
+C:\Users\AndreyBonda\Dropbox\Task\Task.Web\bin\Task.DALModels.dll
+C:\Users\AndreyBonda\Dropbox\Task\Task.Web\bin\Task.Infrastructure.dll
+C:\Users\AndreyBonda\Dropbox\Task\Task.Web\bin\Task.Repositories.dll
+C:\Users\AndreyBonda\Dropbox\Task\Task.Web\bin\Task.Services.dll
+C:\Users\AndreyBonda\Dropbox\Task\Task.Web\bin\NHibernate.dll
+C:\Users\AndreyBonda\Dropbox\Task\Task.Web\bin\FluentNHibernate.dll
+C:\Users\AndreyBonda\Dropbox\Task\Task.Web\bin\AutoMapper.dll
+C:\Users\AndreyBonda\Dropbox\Task\Task.Web\bin\Iesi.Collections.dll
+C:\Users\AndreyBonda\Dropbox\Task\Task.Web\bin\Task.BLLModels.pdb
+C:\Users\AndreyBonda\Dropbox\Task\Task.Web\bin\Task.DALModels.pdb
+C:\Users\AndreyBonda\Dropbox\Task\Task.Web\bin\Task.Infrastructure.pdb
+C:\Users\AndreyBonda\Dropbox\Task\Task.Web\bin\Task.Repositories.pdb
+C:\Users\AndreyBonda\Dropbox\Task\Task.Web\bin\Task.Services.pdb
+C:\Users\AndreyBonda\Dropbox\Task\Task.Web\bin\EntityFramework.xml
+C:\Users\AndreyBonda\Dropbox\Task\Task.Web\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\AndreyBonda\Dropbox\Task\Task.Web\obj\Debug\Task.Web.dll
+C:\Users\AndreyBonda\Dropbox\Task\Task.Web\obj\Debug\Task.Web.pdb
+D:\Andrey Bonda\Dropbox\Task\Task.Web\bin\Ninject.dll
+D:\Andrey Bonda\Dropbox\Task\Task.Web\bin\Task.Infrastructure.dll
+D:\Andrey Bonda\Dropbox\Task\Task.Web\bin\Task.Repositories.dll
+D:\Andrey Bonda\Dropbox\Task\Task.Web\bin\Task.Services.dll
+D:\Andrey Bonda\Dropbox\Task\Task.Web\bin\FluentNHibernate.dll
+D:\Andrey Bonda\Dropbox\Task\Task.Web\bin\NHibernate.dll
+D:\Andrey Bonda\Dropbox\Task\Task.Web\bin\AutoMapper.dll
+D:\Andrey Bonda\Dropbox\Task\Task.Web\bin\Iesi.Collections.dll
+D:\Andrey Bonda\Dropbox\Task\Task.Web\bin\Task.Infrastructure.pdb
+D:\Andrey Bonda\Dropbox\Task\Task.Web\bin\Task.Repositories.pdb
+D:\Andrey Bonda\Dropbox\Task\Task.Web\bin\Task.Services.pdb
+C:\Users\Andrei_Bonda\Dropbox\Task\Task.Web\bin\NLog.dll
+C:\Users\Andrei_Bonda\Dropbox\Task\Task.Web\bin\NLog.xml
+D:\Andrey Bonda\Dropbox\Task\Task.Web\bin\NLog.dll
+D:\Andrey Bonda\Dropbox\Task\Task.Web\bin\NLog.xml

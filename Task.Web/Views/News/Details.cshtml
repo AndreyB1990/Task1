@@ -1,0 +1,10 @@
+﻿@{
+    ViewBag.Title = "Details";
+}
+@model int
+
+<input id="news-item-info" type="hidden" data-info='{"Id": "@Model", "UserIsAdmin": "@ViewBag.userIsAdmin" }'/>
+<script type="text/javascript" src="@Url.Content("~/Scripts/jQueryTemplateConfigs/news-item.js")"></script>
+
+<div id="news-items-container">
+</div>

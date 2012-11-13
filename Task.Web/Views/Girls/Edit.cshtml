@@ -1,0 +1,17 @@
+﻿@model Task.DALModels.Girl
+@{
+    ViewBag.Title = "Edit";
+}
+@using (Html.BeginForm("Edit", "Girls"))
+{
+    <div class="text-center">
+        @Html.ValidationSummary(true)
+        <h1>
+            Edit Girl</h1>
+    </div>
+    @Html.EditorForModel()
+    <div class="text-center">
+        <input type="submit" class="button" value="Edit" />
+        <input type="button" class="button" value="Cancel" onclick="goToPage('@Url.Action("Index", "Girls")')" />
+    </div>
+}

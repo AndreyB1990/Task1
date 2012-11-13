@@ -1,0 +1,12 @@
+﻿@model Task.Web.Models.AccountModels.LogOnModel
+@{
+    ViewBag.Title = "Log On";
+}
+@using (Html.BeginForm())
+{
+    @Html.EditorForModel()
+    <div class="text-center">
+        <input type="submit" class="button" value="Log" />
+        <input type="button" id="btn_cancel" class="button" value="Cancel" onclick="goToPage('@Url.Action("Index", "Home")')" />
+    </div>
+}
