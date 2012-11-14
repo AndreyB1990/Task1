@@ -7,7 +7,11 @@
         Layout = null;
     }
 }
-<input id="girls-items-info" type="hidden" data-info='{"Page": "@ViewBag.Page", "IsBeautiful": "@ViewBag.IsBeautiful", "UserIsAdmin": "@ViewBag.userIsAdmin", "CountOfGirls": "@ViewBag.CountOfGirls", "ItemsPerPage": "@Constants.GIRLS_PAGER_LINKS_PER_PAGE" }'/>
+<input id="girls-items-info" type="hidden" data-info='{"Page": "@ViewBag.Page", "IsBeautiful": "@ViewBag.IsBeautiful", 
+"UserIsAdmin": "@ViewBag.userIsAdmin", "CountOfGirls": "@ViewBag.CountOfGirls", "ItemsPerPage": "@Constants.GIRLS_PAGER_LINKS_PER_PAGE", 
+"Url": "@String.Format("/Girls/List?isBeautiful={0}&page={1}", @ViewBag.IsBeautiful ?? false, ViewBag.Page ?? 1)", 
+"TemplatePath": "@Url.Content("~/JQueryTemplates/Girls/GirlsItemsTemplate.htm")" }'/>
+
 <script type="text/javascript" src="@Url.Content("~/Scripts/jQueryTemplateConfigs/girls-items.js")"></script>
 <script type="text/javascript" src="@Url.Content("~/Scripts/Pager/girls-pager.js")"></script>
 

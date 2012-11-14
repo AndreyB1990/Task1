@@ -7,9 +7,14 @@
         Layout = null;
     }
 }
-<input id="news-items-info" type="hidden" data-info='{"Page": "@ViewBag.Page", "CountOfNews": "@ViewBag.CountOfNews", "ItemsPerPage": "@Constants.NEWS_PAGER_LINKS_PER_PAGE" }'/>
+<input id="news-items-info" type="hidden" data-info='{ "Page": "@ViewBag.Page", "CountOfNews": "@ViewBag.CountOfNews", 
+"ItemsPerPage": "@Constants.NEWS_PAGER_LINKS_PER_PAGE", "Url": "@String.Format("/News/List?page={0}", ViewBag.Page ?? 1)", 
+"TemplatePath": "@Url.Content("~/JQueryTemplates/News/NewsItemsTemplate.htm")" }'/>
+
+<script type="text/javascript" src="/Scripts/convert-json-date.js"></script>
 <script type="text/javascript" src="@Url.Content("~/Scripts/jQueryTemplateConfigs/news-items.js")"></script>
 <script type="text/javascript" src="@Url.Content("~/Scripts/Pager/news-pager.js")"></script>
+
 <h1>
     News</h1>
 <div id="news-items-container">

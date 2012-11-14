@@ -3,7 +3,10 @@
 }
 @model int
 
-<input id="news-item-info" type="hidden" data-info='{"Id": "@Model", "UserIsAdmin": "@ViewBag.userIsAdmin" }'/>
+<input id="news-item-info" type="hidden" data-info='{ "UserIsAdmin": "@ViewBag.userIsAdmin", "Url": "@String.Format("/News/Item?id={0}", @Model)",
+ "TemplatePath": "@Url.Content("~/JQueryTemplates/News/NewsItemTemplate.htm")" }'/>
+ 
+<script type="text/javascript" src="/Scripts/convert-json-date.js"></script>
 <script type="text/javascript" src="@Url.Content("~/Scripts/jQueryTemplateConfigs/news-item.js")"></script>
 
 <div id="news-items-container">
