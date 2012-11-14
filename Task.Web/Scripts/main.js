@@ -58,10 +58,12 @@
         return deleteNewsItem(id);
     });
 
+    //Listens clicks of buttons for displaying beautiful girls
     $('#beautiful-girls-button').live('click', function () {
         window.location = '/Girls/Index/?isBeautiful=true';
     });
 
+    //Listens clicks of buttons for displaying all girls
     $('#all-girls-button').live('click', function () {
         window.location = '/Girls/Index/?isBeautiful=false';
     });
