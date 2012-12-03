@@ -31,7 +31,7 @@ namespace Task.Repositories
                  let factor = CalculateFactor(girl)
                  where Constants.MIN_VALUE_FACTOR_GIRL < factor
                   && factor < Constants.MAX_VALUE_FACTOR_GIRL
-                 select girl).ToList().AsQueryable();
+                 select girl).ToList().OrderBy(GirlMethods.GetAge).AsQueryable();
             return beautifulGirls;
             //ICriteria criteriaQuery = Session.CreateCriteria(typeof(Girl));
             //IProjection multiplyProjection = new SqlFunctionProjection(new VarArgsSQLFunction("(", "*", ")"), NHibernateUtil.Double,
@@ -43,7 +43,7 @@ namespace Task.Repositories
             //return criteriaQuery.List<Girl>().OrderBy(GirlHelperMethods.GetAge).AsQueryable();
         }
 
-        private double CalculateFactor(Girl girl)
+        private static double CalculateFactor(Girl girl)
         {
             var heightInMeteres = (girl.Height / Constants.ONE_METR_IN_SM);
             var heightDoubled = heightInMeteres * heightInMeteres;

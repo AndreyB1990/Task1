@@ -6,4 +6,6 @@
   <Module PersistentId="6C6A97FB-271D-4214-A1EB-8BE6DD3A1ACB" ModuleId="Task.Repositories" />
   <Module PersistentId="5190949A-E31A-49CB-B089-5C2A1D2A5724" ModuleId="Task.DALModels" />
   <Module PersistentId="1ECFBD11-7B4E-4A47-857E-180A9DACBFD2" ModuleId="Task.Metadata" />
+  <Module PersistentId="193B4209-2EB0-4A54-AF7A-C2154A3000EB" ModuleId="Task.DataAccess.UnitTests" />
+  <Module PersistentId="DC128B86-DEA0-4DB9-9A11-BFCA960CC16B" ModuleId="Task.DataAccess.UnitTests_1" />
 </Modules>

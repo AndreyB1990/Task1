@@ -11,6 +11,7 @@ namespace Task.Repositories.Mappings
         public GirlMap()
         {
             Id(x => x.Id).GeneratedBy.Identity();
+            //Map(x => x.Id);
             Map(x => x.Name);
             Map(x => x.BirthDate);
             Map(x => x.Weight);

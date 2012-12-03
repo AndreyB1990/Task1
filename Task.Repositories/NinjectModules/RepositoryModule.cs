@@ -10,7 +10,7 @@ namespace Task.Repositories.NinjectModules
     public class RepositoryModule : NinjectModule
     {
         /// <summary>
-        /// Registers dependencies in Services library
+        /// Registers dependencies in Repositories library
         /// </summary>
         public override void Load()
         {

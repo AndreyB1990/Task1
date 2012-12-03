@@ -68,7 +68,6 @@ C:\Users\Andrei_Bonda\Task1\Task.Web\bin\Task.Web.dll
 C:\Users\Andrei_Bonda\Task1\Task.Web\bin\Task.Web.pdb
 C:\Users\Andrei_Bonda\Task1\Task.Web\bin\AutoMapper.dll
 C:\Users\Andrei_Bonda\Task1\Task.Web\bin\EntityFramework.dll
-C:\Users\Andrei_Bonda\Task1\Task.Web\bin\Ninject.dll
 C:\Users\Andrei_Bonda\Task1\Task.Web\bin\Task.DALModels.dll
 C:\Users\Andrei_Bonda\Task1\Task.Web\bin\Task.Infrastructure.dll
 C:\Users\Andrei_Bonda\Task1\Task.Web\bin\Task.Repositories.dll
