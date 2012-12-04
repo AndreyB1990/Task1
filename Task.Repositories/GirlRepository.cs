@@ -47,7 +47,7 @@ namespace Task.Repositories
         {
             var heightInMeteres = (girl.Height / Constants.ONE_METR_IN_SM);
             var heightDoubled = heightInMeteres * heightInMeteres;
-            return girl.Weight / heightDoubled;
+            return (double) (girl.Weight / heightDoubled);
         }
 
 

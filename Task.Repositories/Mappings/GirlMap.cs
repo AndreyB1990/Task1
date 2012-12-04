@@ -10,12 +10,11 @@ namespace Task.Repositories.Mappings
         /// </summary>
         public GirlMap()
         {
-            Id(x => x.Id).GeneratedBy.Identity();
-            //Map(x => x.Id);
-            Map(x => x.Name);
-            Map(x => x.BirthDate);
-            Map(x => x.Weight);
-            Map(x => x.Height);
+            Id(x => x.Id).GeneratedBy.Native();
+            Map(x => x.Name).Not.Nullable();
+            Map(x => x.BirthDate).Not.Nullable();
+            Map(x => x.Weight).Not.Nullable();
+            Map(x => x.Height).Not.Nullable();
         }
     }
 }

@@ -1,34 +1,21 @@
-﻿using System;
-using System.Reflection;
-using System.Text;
-using System.Collections.Generic;
-using System.Linq;
-using FluentNHibernate;
-using FluentNHibernate.Cfg;
-using FluentNHibernate.Cfg.Db;
-using FluentNHibernate.Testing;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
-using Ninject.Modules;
+﻿using NUnit.Framework;
 using Task.Infrastructure.Ninject;
-using Task.Repositories.Interfaces;
-using Task.Repositories.NHibernate.Interfaces;
-using Task.Repositories.NinjectModules;
 
 namespace Task.DataAccess.UnitTests.Repositories.BaseImplementation
 {
-    [TestClass]
+    [TestFixture]
     public class FixtureBase
     {
         #region Additional test attributes
 
-        [TestInitialize()]
+        [SetUp]
         public void Initialize()
         {
             BeforeEachTest();
             CreateInitialData();
         }
 
-        [TestCleanup()]
+        [TearDown]
         public void Cleanup()
         {
             AfterEachTest();
@@ -38,10 +25,6 @@ namespace Task.DataAccess.UnitTests.Repositories.BaseImplementation
 
         protected virtual void BeforeEachTest()
         {
-            //var fakeRepositoryModule = new RepositoryModule();//.Rebind<INHibernateInitializer>().To<FakeNHibernateInitializer>();
-            //fakeRepositoryModule.Load();
-            //fakeRepositoryModule.Unbind<INHibernateInitializer>();
-            //fakeRepositoryModule.Kernel.Rebind<INHibernateInitializer>().To<FakeNHibernateInitializer>();
             Locator.Init(new FakeRepositoryModule());
         }
 

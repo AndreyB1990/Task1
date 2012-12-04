@@ -1,33 +1,92 @@
 ﻿using System;
-using System.Text;
-using System.Collections.Generic;
 using System.Linq;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
+using NUnit.Framework;
 using Task.DALModels;
 using Task.DataAccess.UnitTests.Repositories.BaseImplementation;
+using Task.Infrastructure.Helpers;
 using Task.Infrastructure.Ninject;
+using Task.Infrastructure.UnitOfWork;
 using Task.Repositories.Interfaces;
 
 namespace Task.DataAccess.UnitTests.Repositories
 {
-    [TestClass]
+    [TestFixture]
     public class GirlRepositoryTests : FixtureBase
     {
         private IGirlRepository _girlRepository;
 
-        [TestMethod]
-        public void GetBeautifulGirls_returnsValidNumberOfBeautifulGirls_ReturnsTrue()
+        [Test]
+        public void GetBeautifulGirls_returnsValidNumberOfBeautifulGirls()
         {
             var count = _girlRepository.GetBeautifulGirls().Count();
             Assert.AreEqual(count, 2);
         }
 
-        [TestMethod]
-        public void GetBeautifulGirls_returnsBeautifulGirlsInRightOrder_ReturnsTrue()
+        [Test]
+        public void GetBeautifulGirls_returnsBeautifulGirlsInRightOrder()
         {
             var ids = _girlRepository.GetBeautifulGirls().Select(x => x.Id).ToArray();
-            int[] expIds = {2, 1};
-            Assert.AreEqual(ids, expIds);
+            var expIds =
+                _girlRepository.GetBeautifulGirls().OrderBy(x => GirlMethods.GetAge(x)).Select(x => x.Id).ToArray();
+
+            Assert.AreEqual(ids[0], expIds[0]);
+            Assert.AreEqual(ids[1], expIds[1]);
+        }
+
+        [Test]
+        public void GetAll_returnsGirlsInRightOrder()
+        {
+            var ids = _girlRepository.GetAll().Select(x => x.Id).ToArray();
+            var expIds =
+                _girlRepository.GetAll().OrderBy(x => GirlMethods.GetAge(x)).Select(x => x.Id).ToArray();
+            Assert.AreEqual(ids[0], expIds[0]);
+            Assert.AreEqual(ids[1], expIds[1]);
+            Assert.AreEqual(ids[2], expIds[2]);
+        }
+
+        [Test]
+        [ExpectedException(typeof(NHibernate.PropertyValueException))]
+        public void GetLatestNews_nameCannotBeNull_ThrowsException()
+        {
+            using (Locator.GetService<IUnitOfWorkFactory>().Create())
+            {
+                _girlRepository.Add(new Girl
+                {
+                    BirthDate = new DateTime(1990, 4, 4),
+                    Height = 180,
+                    Weight = 56
+                });
+            }
+        }
+
+        [Test]
+        [ExpectedException(typeof(NHibernate.PropertyValueException))]
+        public void GetLatestNews_heightCannotBeNull_ThrowsException()
+        {
+            using (Locator.GetService<IUnitOfWorkFactory>().Create())
+            {
+                _girlRepository.Add(new Girl
+                {
+                    Name = "Alena",
+                    BirthDate = new DateTime(1990, 4, 4),
+                    Weight = 56
+                });
+            }
+        }
+
+        [Test]
+        [ExpectedException(typeof(NHibernate.PropertyValueException))]
+        public void GetLatestNews_weightCannotBeNull_ThrowsException()
+        {
+            using (Locator.GetService<IUnitOfWorkFactory>().Create())
+            {
+                _girlRepository.Add(new Girl
+                {
+                    Name = "Alena",
+                    BirthDate = new DateTime(1990, 4, 4),
+                    Height = 180
+                });
+            }
         }
 
         protected override void CreateInitialData()
@@ -37,7 +96,6 @@ namespace Task.DataAccess.UnitTests.Repositories
                             {
                                 new Girl
                                     {
-                                        Id = 1,
                                         Name = "Alena",
                                         BirthDate = new DateTime(1990, 4, 4),
                                         Height = 180,
@@ -45,7 +103,6 @@ namespace Task.DataAccess.UnitTests.Repositories
                                     },
                                 new Girl
                                     {
-                                        Id = 2,
                                         Name = "Alla",
                                         BirthDate = new DateTime(1992, 7, 7),
                                         Height = 170,
@@ -53,17 +110,22 @@ namespace Task.DataAccess.UnitTests.Repositories
                                     },
                                 new Girl
                                     {
-                                        Id = 3,
                                         Name = "Marina",
                                         BirthDate = new DateTime(1992, 7, 7),
                                         Height = 150,
                                         Weight = 80
                                     }
                             };
-            foreach (var girl in girls)
+            foreach (var obj in girls)
             {
-                _girlRepository.Add(girl);
+                _girlRepository.Add(obj);
             }
+        }
+
+        protected override void AfterEachTest()
+        {
+            base.AfterEachTest();
+            _girlRepository.DeleteAll();
         }
     }
 }

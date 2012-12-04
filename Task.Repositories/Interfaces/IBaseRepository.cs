@@ -55,6 +55,11 @@ namespace Task.Repositories.Interfaces
         void Delete(T obj);
 
         /// <summary>
+        /// Deletes all objects from database
+        /// </summary>
+        void DeleteAll();
+
+        /// <summary>
         /// Saves object to database
         /// </summary>
         /// <param name="entity"></param>

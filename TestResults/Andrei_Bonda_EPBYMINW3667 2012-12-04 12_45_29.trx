@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="68c8fcd8-b913-4b75-b6bf-0f1424f09b58" name="Andrei_Bonda@EPBYMINW3667 2012-12-04 12:45:29" runUser="MINSK\Andrei_Bonda" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="d74361e1-9338-42ef-8c6d-f2893d2c5d7b">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="Andrei_Bonda_EPBYMINW3667 2012-12-04 12_45_29">
+      <DeploymentItem filename="C:\Users\Andrei_Bonda\Task1\packages\NHibernate\NHibernate.ByteCode.Castle.dll" />
+      <DeploymentItem filename="C:\Users\Andrei_Bonda\Task1\Task.Web\bin\NHibernate.dll" />
+      <DeploymentItem filename="C:\Users\Andrei_Bonda\Task1\Task.Web\bin\FluentNHibernate.dll" />
+      <DeploymentItem filename="C:\Users\Andrei_Bonda\Task1\packages\Rhino.Mocks-3.6-Build-21\Rhino.Mocks.dll" />
+      <DeploymentItem filename="C:\Users\Andrei_Bonda\Task1\Task.Web\bin\Ninject.dll" />
+      <DeploymentItem filename="C:\Users\Andrei_Bonda\Task1\Task.Repositories\bin\Debug\Task.Repositories.dll" />
+      <DeploymentItem filename="C:\Users\Andrei_Bonda\Task1\Task.Infrastructure\bin\Debug\Task.Infrastructure.dll" />
+      <DeploymentItem filename="C:\Users\Andrei_Bonda\Task1\packages\SQLite\System.Data.SQLite.dll" />
+      <DeploymentItem filename="C:\Users\Andrei_Bonda\Task1\Task.DALModels\bin\Debug\Task.DALModels.dll" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2012-12-04T12:45:29.7470994+03:00" queuing="2012-12-04T12:45:29.8560994+03:00" start="2012-12-04T12:45:29.8670994+03:00" finish="2012-12-04T12:45:35.7710994+03:00" />
+  <ResultSummary outcome="Failed">
+    <Counters total="3" executed="3" passed="2" error="0" failed="1" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="GetBeautifulGirls_returnsBeautifulGirlsInRightOrder_ReturnsTrue" storage="c:\users\andrei_bonda\task1\task.dataaccess.unittests\bin\debug\task.dataaccess.unittests.dll" id="2ce3faf0-e9fe-2613-4016-286460689456">
+      <Execution id="4c394cd4-0e1e-42f9-924a-6e7832486bff" />
+      <TestMethod codeBase="C:/Users/Andrei_Bonda/Task1/Task.DataAccess.UnitTests/bin/Debug/Task.DataAccess.UnitTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Task.DataAccess.UnitTests.Repositories.GirlRepositoryTests, Task.DataAccess.UnitTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="GetBeautifulGirls_returnsBeautifulGirlsInRightOrder_ReturnsTrue" />
+    </UnitTest>
+    <UnitTest name="GetBeautifulGirls_returnsValidNumberOfBeautifulGirls_ReturnsTrue" storage="c:\users\andrei_bonda\task1\task.dataaccess.unittests\bin\debug\task.dataaccess.unittests.dll" id="36d6b748-f9a1-0ca6-ddb5-50045d1b1fe9">
+      <Execution id="e22b7abf-f0ad-4796-9023-6bcb8e525878" />
+      <TestMethod codeBase="C:/Users/Andrei_Bonda/Task1/Task.DataAccess.UnitTests/bin/Debug/Task.DataAccess.UnitTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Task.DataAccess.UnitTests.Repositories.GirlRepositoryTests, Task.DataAccess.UnitTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="GetBeautifulGirls_returnsValidNumberOfBeautifulGirls_ReturnsTrue" />
+    </UnitTest>
+    <UnitTest name="GetBeautifulGirls_returnsGirlsInRightOrder_ReturnsTrue" storage="c:\users\andrei_bonda\task1\task.dataaccess.unittests\bin\debug\task.dataaccess.unittests.dll" id="e4b8214c-3dc9-62e1-b27d-3490fb19f91b">
+      <Execution id="cad9f750-bdc4-4363-a988-90d274f851d0" />
+      <TestMethod codeBase="C:/Users/Andrei_Bonda/Task1/Task.DataAccess.UnitTests/bin/Debug/Task.DataAccess.UnitTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Task.DataAccess.UnitTests.Repositories.GirlRepositoryTests, Task.DataAccess.UnitTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="GetBeautifulGirls_returnsGirlsInRightOrder_ReturnsTrue" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="2ce3faf0-e9fe-2613-4016-286460689456" executionId="4c394cd4-0e1e-42f9-924a-6e7832486bff" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="36d6b748-f9a1-0ca6-ddb5-50045d1b1fe9" executionId="e22b7abf-f0ad-4796-9023-6bcb8e525878" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="e4b8214c-3dc9-62e1-b27d-3490fb19f91b" executionId="cad9f750-bdc4-4363-a988-90d274f851d0" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="4c394cd4-0e1e-42f9-924a-6e7832486bff" testId="2ce3faf0-e9fe-2613-4016-286460689456" testName="GetBeautifulGirls_returnsBeautifulGirlsInRightOrder_ReturnsTrue" computerName="EPBYMINW3667" duration="00:00:03.6088451" startTime="2012-12-04T12:45:29.9450994+03:00" endTime="2012-12-04T12:45:33.8680994+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="4c394cd4-0e1e-42f9-924a-6e7832486bff">
+    </UnitTestResult>
+    <UnitTestResult executionId="e22b7abf-f0ad-4796-9023-6bcb8e525878" testId="36d6b748-f9a1-0ca6-ddb5-50045d1b1fe9" testName="GetBeautifulGirls_returnsValidNumberOfBeautifulGirls_ReturnsTrue" computerName="EPBYMINW3667" duration="00:00:00.9052431" startTime="2012-12-04T12:45:33.8880994+03:00" endTime="2012-12-04T12:45:34.8020994+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="e22b7abf-f0ad-4796-9023-6bcb8e525878">
+    </UnitTestResult>
+    <UnitTestResult executionId="cad9f750-bdc4-4363-a988-90d274f851d0" testId="e4b8214c-3dc9-62e1-b27d-3490fb19f91b" testName="GetBeautifulGirls_returnsGirlsInRightOrder_ReturnsTrue" computerName="EPBYMINW3667" duration="00:00:00.5942918" startTime="2012-12-04T12:45:34.8080994+03:00" endTime="2012-12-04T12:45:35.4060994+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="cad9f750-bdc4-4363-a988-90d274f851d0">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.AreEqual failed. Expected:&lt;8&gt;. Actual:&lt;2&gt;. </Message>
+          <StackTrace>   at Task.DataAccess.UnitTests.Repositories.GirlRepositoryTests.GetBeautifulGirls_returnsGirlsInRightOrder_ReturnsTrue() in C:\Users\Andrei_Bonda\Task1\Task.DataAccess.UnitTests\Repositories\GirlRepositoryTests.cs:line 39
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+  </Results>
+</TestRun>

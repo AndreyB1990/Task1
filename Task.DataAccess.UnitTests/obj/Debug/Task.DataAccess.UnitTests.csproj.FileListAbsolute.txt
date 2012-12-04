@@ -20,3 +20,6 @@ C:\Users\Andrei_Bonda\Task1\Task.DataAccess.UnitTests\obj\Debug\Task.DataAccess.
 C:\Users\Andrei_Bonda\Task1\Task.DataAccess.UnitTests\bin\Debug\NHibernate.ByteCode.Castle.dll
 C:\Users\Andrei_Bonda\Task1\Task.DataAccess.UnitTests\bin\Debug\Castle.Core.dll
 C:\Users\Andrei_Bonda\Task1\Task.DataAccess.UnitTests\bin\Debug\System.Data.SQLite.dll
+C:\Users\Andrei_Bonda\Task1\Task.DataAccess.UnitTests\bin\Debug\nunit.framework.dll
+C:\Users\Andrei_Bonda\Task1\Task.DataAccess.UnitTests\bin\Debug\nunit.framework.xml
+C:\Users\Andrei_Bonda\Task1\Task.DataAccess.UnitTests\bin\Debug\Task.DataAccess.UnitTests.dll.config

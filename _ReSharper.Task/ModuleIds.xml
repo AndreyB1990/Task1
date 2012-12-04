@@ -1,11 +1,9 @@
 <Modules>
   <Module PersistentId="5FE0A683-5E46-44A3-AB5F-65BC463B85C1" ModuleId="Task.Web" />
-  <Module PersistentId="0E26CC95-69E5-4410-A6C7-54508296ED69" ModuleId="Task.Tests" />
   <Module PersistentId="0862A143-C7C1-422D-B896-BC08984165EC" ModuleId="Task.Infrastructure" />
   <Module PersistentId="518DA726-FBCD-4A7A-8969-DC9DE2DFE6C3" ModuleId="Task.Services" />
   <Module PersistentId="6C6A97FB-271D-4214-A1EB-8BE6DD3A1ACB" ModuleId="Task.Repositories" />
   <Module PersistentId="5190949A-E31A-49CB-B089-5C2A1D2A5724" ModuleId="Task.DALModels" />
   <Module PersistentId="1ECFBD11-7B4E-4A47-857E-180A9DACBFD2" ModuleId="Task.Metadata" />
-  <Module PersistentId="193B4209-2EB0-4A54-AF7A-C2154A3000EB" ModuleId="Task.DataAccess.UnitTests" />
   <Module PersistentId="DC128B86-DEA0-4DB9-9A11-BFCA960CC16B" ModuleId="Task.DataAccess.UnitTests_1" />
 </Modules>

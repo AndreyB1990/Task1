@@ -106,6 +106,18 @@ namespace Task.Repositories.BaseImplementation
         }
 
         /// <summary>
+        /// Deletes all objects from database
+        /// </summary>
+        public virtual void DeleteAll()
+        {
+            foreach (var obj in GetAll())
+            {
+                Session.Delete(obj);
+            }
+            Session.Flush();
+        }
+
+        /// <summary>
         /// Saves object to database
         /// </summary>
         /// <param name="entity"></param>

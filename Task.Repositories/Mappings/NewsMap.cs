@@ -10,11 +10,11 @@ namespace Task.Repositories.Mappings
         /// </summary>
         public NewsMap()
         {
-            Id(x => x.Id).GeneratedBy.Identity();
-            Map(x => x.Title);
-            Map(x => x.Date);
-            Map(x => x.ShortDescription);
-            Map(x => x.Description);
+            Id(x => x.Id).GeneratedBy.Native();
+            Map(x => x.Title).Not.Nullable();
+            Map(x => x.Date).Not.Nullable();
+            Map(x => x.ShortDescription).Not.Nullable();
+            Map(x => x.Description).Nullable();
         }
     }
 }

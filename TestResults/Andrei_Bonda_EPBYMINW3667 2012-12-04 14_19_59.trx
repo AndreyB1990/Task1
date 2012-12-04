@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="1eb51187-97ae-474f-b016-b201b1bc4dce" name="Andrei_Bonda@EPBYMINW3667 2012-12-04 14:19:59" runUser="MINSK\Andrei_Bonda" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="d74361e1-9338-42ef-8c6d-f2893d2c5d7b">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="Andrei_Bonda_EPBYMINW3667 2012-12-04 14_19_59">
+      <DeploymentItem filename="C:\Users\Andrei_Bonda\Task1\packages\NHibernate\NHibernate.ByteCode.Castle.dll" />
+      <DeploymentItem filename="C:\Users\Andrei_Bonda\Task1\Task.Web\bin\NHibernate.dll" />
+      <DeploymentItem filename="C:\Users\Andrei_Bonda\Task1\Task.Web\bin\FluentNHibernate.dll" />
+      <DeploymentItem filename="C:\Users\Andrei_Bonda\Task1\packages\Rhino.Mocks-3.6-Build-21\Rhino.Mocks.dll" />
+      <DeploymentItem filename="C:\Users\Andrei_Bonda\Task1\Task.Web\bin\Ninject.dll" />
+      <DeploymentItem filename="C:\Users\Andrei_Bonda\Task1\Task.Repositories\bin\Debug\Task.Repositories.dll" />
+      <DeploymentItem filename="C:\Users\Andrei_Bonda\Task1\Task.Infrastructure\bin\Debug\Task.Infrastructure.dll" />
+      <DeploymentItem filename="C:\Users\Andrei_Bonda\Task1\packages\SQLite\System.Data.SQLite.dll" />
+      <DeploymentItem filename="C:\Users\Andrei_Bonda\Task1\Task.DALModels\bin\Debug\Task.DALModels.dll" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2012-12-04T14:19:59.1151671+03:00" queuing="2012-12-04T14:19:59.3521908+03:00" start="2012-12-04T14:19:59.3821938+03:00" finish="2012-12-04T14:20:05.4478003+03:00" />
+  <ResultSummary outcome="Failed">
+    <Counters total="5" executed="5" passed="4" error="0" failed="1" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="GetLatestNews_returnsValidNumberOfLatestNews_ReturnsTrue" storage="c:\users\andrei_bonda\task1\task.dataaccess.unittests\bin\debug\task.dataaccess.unittests.dll" id="9c2fb8b1-d21c-bc5d-949f-1e2429469ad3">
+      <Execution id="c99b89c3-2cbb-4b2f-9cda-78ec20168a8f" />
+      <TestMethod codeBase="C:/Users/Andrei_Bonda/Task1/Task.DataAccess.UnitTests/bin/Debug/Task.DataAccess.UnitTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Task.DataAccess.UnitTests.Repositories.NewsRepositoryTests, Task.DataAccess.UnitTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="GetLatestNews_returnsValidNumberOfLatestNews_ReturnsTrue" />
+    </UnitTest>
+    <UnitTest name="GetLatestNews_shortDescriptionCannotBeNull_ThrowsException" storage="c:\users\andrei_bonda\task1\task.dataaccess.unittests\bin\debug\task.dataaccess.unittests.dll" id="d618837d-e381-76b8-0dc5-6bb4c88a1393">
+      <Execution id="f779ef37-5246-41b6-a323-900bf33e40f0" />
+      <TestMethod codeBase="C:/Users/Andrei_Bonda/Task1/Task.DataAccess.UnitTests/bin/Debug/Task.DataAccess.UnitTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Task.DataAccess.UnitTests.Repositories.NewsRepositoryTests, Task.DataAccess.UnitTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="GetLatestNews_shortDescriptionCannotBeNull_ThrowsException" />
+    </UnitTest>
+    <UnitTest name="GetBeautifulGirls_returnsBeautifulGirlsInRightOrder_ReturnsTrue" storage="c:\users\andrei_bonda\task1\task.dataaccess.unittests\bin\debug\task.dataaccess.unittests.dll" id="2ce3faf0-e9fe-2613-4016-286460689456">
+      <Execution id="5e311c59-8dc0-4536-aa36-2c5a1f05cd6f" />
+      <TestMethod codeBase="C:/Users/Andrei_Bonda/Task1/Task.DataAccess.UnitTests/bin/Debug/Task.DataAccess.UnitTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Task.DataAccess.UnitTests.Repositories.GirlRepositoryTests, Task.DataAccess.UnitTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="GetBeautifulGirls_returnsBeautifulGirlsInRightOrder_ReturnsTrue" />
+    </UnitTest>
+    <UnitTest name="GetBeautifulGirls_returnsValidNumberOfBeautifulGirls_ReturnsTrue" storage="c:\users\andrei_bonda\task1\task.dataaccess.unittests\bin\debug\task.dataaccess.unittests.dll" id="36d6b748-f9a1-0ca6-ddb5-50045d1b1fe9">
+      <Execution id="42239b4a-ffa6-413c-b379-6d68b40e780e" />
+      <TestMethod codeBase="C:/Users/Andrei_Bonda/Task1/Task.DataAccess.UnitTests/bin/Debug/Task.DataAccess.UnitTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Task.DataAccess.UnitTests.Repositories.GirlRepositoryTests, Task.DataAccess.UnitTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="GetBeautifulGirls_returnsValidNumberOfBeautifulGirls_ReturnsTrue" />
+    </UnitTest>
+    <UnitTest name="GetAll_returnsGirlsInRightOrder_ReturnsTrue" storage="c:\users\andrei_bonda\task1\task.dataaccess.unittests\bin\debug\task.dataaccess.unittests.dll" id="afd5a35d-215b-9c87-e045-e7c898d233c1">
+      <Execution id="99a5266a-cd71-4c8c-a12b-0e3185ae9611" />
+      <TestMethod codeBase="C:/Users/Andrei_Bonda/Task1/Task.DataAccess.UnitTests/bin/Debug/Task.DataAccess.UnitTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Task.DataAccess.UnitTests.Repositories.GirlRepositoryTests, Task.DataAccess.UnitTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="GetAll_returnsGirlsInRightOrder_ReturnsTrue" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="2ce3faf0-e9fe-2613-4016-286460689456" executionId="5e311c59-8dc0-4536-aa36-2c5a1f05cd6f" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="36d6b748-f9a1-0ca6-ddb5-50045d1b1fe9" executionId="42239b4a-ffa6-413c-b379-6d68b40e780e" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="9c2fb8b1-d21c-bc5d-949f-1e2429469ad3" executionId="c99b89c3-2cbb-4b2f-9cda-78ec20168a8f" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="afd5a35d-215b-9c87-e045-e7c898d233c1" executionId="99a5266a-cd71-4c8c-a12b-0e3185ae9611" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="d618837d-e381-76b8-0dc5-6bb4c88a1393" executionId="f779ef37-5246-41b6-a323-900bf33e40f0" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="5e311c59-8dc0-4536-aa36-2c5a1f05cd6f" testId="2ce3faf0-e9fe-2613-4016-286460689456" testName="GetBeautifulGirls_returnsBeautifulGirlsInRightOrder_ReturnsTrue" computerName="EPBYMINW3667" duration="00:00:03.7801894" startTime="2012-12-04T14:19:59.3751931+03:00" endTime="2012-12-04T14:20:03.4295985+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="5e311c59-8dc0-4536-aa36-2c5a1f05cd6f">
+    </UnitTestResult>
+    <UnitTestResult executionId="42239b4a-ffa6-413c-b379-6d68b40e780e" testId="36d6b748-f9a1-0ca6-ddb5-50045d1b1fe9" testName="GetBeautifulGirls_returnsValidNumberOfBeautifulGirls_ReturnsTrue" computerName="EPBYMINW3667" duration="00:00:00.3453135" startTime="2012-12-04T14:20:03.4355991+03:00" endTime="2012-12-04T14:20:03.7866342+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="42239b4a-ffa6-413c-b379-6d68b40e780e">
+    </UnitTestResult>
+    <UnitTestResult executionId="c99b89c3-2cbb-4b2f-9cda-78ec20168a8f" testId="9c2fb8b1-d21c-bc5d-949f-1e2429469ad3" testName="GetLatestNews_returnsValidNumberOfLatestNews_ReturnsTrue" computerName="EPBYMINW3667" duration="00:00:00.5601773" startTime="2012-12-04T14:20:03.7926348+03:00" endTime="2012-12-04T14:20:04.3586914+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="c99b89c3-2cbb-4b2f-9cda-78ec20168a8f">
+    </UnitTestResult>
+    <UnitTestResult executionId="99a5266a-cd71-4c8c-a12b-0e3185ae9611" testId="afd5a35d-215b-9c87-e045-e7c898d233c1" testName="GetAll_returnsGirlsInRightOrder_ReturnsTrue" computerName="EPBYMINW3667" duration="00:00:00.2868845" startTime="2012-12-04T14:20:04.3636919+03:00" endTime="2012-12-04T14:20:04.6567212+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="99a5266a-cd71-4c8c-a12b-0e3185ae9611">
+    </UnitTestResult>
+    <UnitTestResult executionId="f779ef37-5246-41b6-a323-900bf33e40f0" testId="d618837d-e381-76b8-0dc5-6bb4c88a1393" testName="GetLatestNews_shortDescriptionCannotBeNull_ThrowsException" computerName="EPBYMINW3667" duration="00:00:00.7251162" startTime="2012-12-04T14:20:04.6627218+03:00" endTime="2012-12-04T14:20:05.3947950+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="f779ef37-5246-41b6-a323-900bf33e40f0">
+      <Output>
+        <ErrorInfo>
+          <Message>Test method Task.DataAccess.UnitTests.Repositories.NewsRepositoryTests.GetLatestNews_shortDescriptionCannotBeNull_ThrowsException did not throw expected exception System.Exception.</Message>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+  </Results>
+</TestRun>

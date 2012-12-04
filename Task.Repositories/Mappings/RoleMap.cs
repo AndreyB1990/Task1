@@ -10,7 +10,7 @@ namespace Task.Repositories.Mappings
         /// </summary>
         public RoleMap()
         {
-            Id(x => x.Id).GeneratedBy.Identity();
+            Id(x => x.Id).GeneratedBy.Native();
             Map(x => x.RoleName);
             HasManyToMany(x => x.Users)
                 .Cascade.All()

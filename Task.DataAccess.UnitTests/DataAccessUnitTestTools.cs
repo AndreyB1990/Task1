@@ -10,6 +10,7 @@ using FluentNHibernate.Cfg.Db;
 using FluentNHibernate.Testing;
 using NHibernate;
 using NHibernate.Cfg;
+using NHibernate.Tool.hbm2ddl;
 using Ninject;
 using Ninject.Modules;
 using Rhino.Mocks;
@@ -51,38 +52,28 @@ namespace Task.DataAccess.UnitTests
     {
         private readonly Assembly _assemblyContainingMapping;
 
-        //private ISession Session { get; set; }
-
         public FakeNHibernateInitializer(Assembly assemblyContainingMapping)
         {
             _assemblyContainingMapping = assemblyContainingMapping;
         }
         public Configuration GetConfiguration()
         {
-            //var cfg = new SQLiteConfiguration()
-            //    .InMemory()
-            //    .ShowSql()
-            //    .Raw("connection.release_mode", "on_close")
-            //    .Raw("proxyfactory.factory_class",
-            //         "NHibernate.ByteCode.Castle.ProxyFactoryFactory, NHibernate.ByteCode.Castle");
             FluentConfiguration configuration = Fluently.Configure()
                 .Database(() =>
-                          SQLiteConfiguration.Standard
-                              .InMemory())//.Raw("proxyfactory.factory_class","NHibernate.ByteCode.Castle.ProxyFactoryFactory, NHibernate.ByteCode.Castle"))
+                          SQLiteConfiguration.Standard.UsingFile("Test.db"))
+                              //.InMemory().ShowSql())
                 .Mappings(mappingConfiguration => mappingConfiguration
                                                       .FluentMappings
                                                       .AddFromAssembly(_assemblyContainingMapping))
                 .ExposeConfiguration(c => c.SetProperty("current_session_context_class", "thread_static"));
             SessionSource sessionSource = new SingleConnectionSessionSourceForSQLiteInMemoryTesting(configuration);//cfg.ToProperties(), AutoMap.AssemblyOf<UserMap>(t => t.Namespace == "Task.Repositories.Mappings"));//configuration);
             sessionSource.BuildSchema();
-            //Session = sessionSource.CreateSession();
-            //HttpContext.Current = DataAccessUnitTestTools.FakeHttpContext();
-            //HttpContext.Current.Items["thread_static"] = Session;
-            return sessionSource.Configuration;//configuration.BuildConfiguration();
+            //sessionSource.Configuration.SetProperty("dialect", "NHibernate.Dialect.SQLiteDialect");
+            return sessionSource.Configuration;
             
         }
     }
-    //public class RoommatePersistenceModel : AutoPersistenceModel
+    //public class PersistenceModel : AutoPersistenceModel
     //{
     //    public RoommatePersistenceModel()
     //    {

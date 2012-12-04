@@ -10,7 +10,7 @@ namespace Task.Repositories.Mappings
         /// </summary>
         public UserMap()
         {
-            Id(x => x.Id).GeneratedBy.Identity();
+            Id(x => x.Id).GeneratedBy.Native();
             Map(x => x.Login);
             Map(x => x.Email);
             Map(x => x.Password);

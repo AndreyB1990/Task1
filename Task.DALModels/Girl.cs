@@ -14,8 +14,8 @@ namespace Task.DALModels
 
         public virtual DateTime BirthDate { get; set; }
 
-        public virtual double Weight { get; set; }
+        public virtual double? Weight { get; set; }
 
-        public virtual double Height { get; set; }
+        public virtual double? Height { get; set; }
     }
 }

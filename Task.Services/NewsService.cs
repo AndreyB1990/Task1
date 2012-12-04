@@ -28,6 +28,7 @@ namespace Task.Services
         /// <returns></returns>
         public override IEnumerable<News> GetAll()
         {
+            var t = _context.GetAll();
             return _context.GetAll();
         }
 

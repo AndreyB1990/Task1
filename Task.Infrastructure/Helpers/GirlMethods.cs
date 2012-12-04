@@ -24,7 +24,9 @@ namespace Task.Infrastructure.Helpers
         /// <returns>Double</returns>
         public static double GetFactor(Girl girl)
         {
-            return girl.Weight / (Math.Pow(girl.Height, 2) / (Constants.ONE_METR_IN_SM * Constants.ONE_METR_IN_SM));
+            if (girl.Height != null)
+                return (double) (girl.Weight / (Math.Pow((double) girl.Height, 2) / (Constants.ONE_METR_IN_SM * Constants.ONE_METR_IN_SM)));
+            return 0;
         }
     }
 }
