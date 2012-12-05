@@ -11,7 +11,7 @@ using Task.Repositories.NHibernate.Interfaces;
 
 namespace Task.Repositories
 {
-    class NewsRepository : NHibernateRepository<News>, INewsRepository
+    public class NewsRepository : NHibernateRepository<News>, INewsRepository
     {
         /// <summary>
         /// Base constructor, which initializes NHibernateRepository(News)
@@ -51,11 +51,14 @@ namespace Task.Repositories
         /// <returns></returns>
         public IQueryable<News> GetLatestNews()
         {
-            ICriteria criteriaQuery = Session.CreateCriteria(typeof(News));
+            //ICriteria criteriaQuery = Session.CreateCriteria(typeof(News));
             var newsTime = DateTime.Now - Constants.TIME_OF_NEWS;
-            criteriaQuery.Add(Restrictions.Gt("Date", newsTime));
-            criteriaQuery.AddOrder(Order.Desc("Date"));
-            return criteriaQuery.List<News>().AsQueryable();
+            //criteriaQuery.Add(Restrictions.Gt("Date", newsTime));
+            //criteriaQuery.AddOrder(Order.Desc("Date"));
+            //if (criteriaQuery.List<News>() == null)
+            //    return new EnumerableQuery<News>(new News[]{});
+            //return criteriaQuery.List<News>().AsQueryable();
+            return GetAll().Where(x => x.Date.CompareTo(newsTime) == 1).OrderBy(x => x.Date);
         }
     }
 }

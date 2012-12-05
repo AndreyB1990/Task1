@@ -8,7 +8,7 @@ using Task.Repositories.NHibernate.Interfaces;
 
 namespace Task.Repositories.BaseImplementation
 {
-    abstract class NHibernateRepository<T> : IBaseRepository<T> where T : class, new()
+    public abstract class NHibernateRepository<T> : IBaseRepository<T> where T : class, new()
     {
         /// <summary>
         /// Object which creates a database connection and open a <c>ISession</c> on it

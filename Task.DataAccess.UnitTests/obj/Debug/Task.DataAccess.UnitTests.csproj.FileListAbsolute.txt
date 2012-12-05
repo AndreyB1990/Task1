@@ -23,3 +23,4 @@ C:\Users\Andrei_Bonda\Task1\Task.DataAccess.UnitTests\bin\Debug\System.Data.SQLi
 C:\Users\Andrei_Bonda\Task1\Task.DataAccess.UnitTests\bin\Debug\nunit.framework.dll
 C:\Users\Andrei_Bonda\Task1\Task.DataAccess.UnitTests\bin\Debug\nunit.framework.xml
 C:\Users\Andrei_Bonda\Task1\Task.DataAccess.UnitTests\bin\Debug\Task.DataAccess.UnitTests.dll.config
+C:\Users\Andrei_Bonda\Task1\Task.DataAccess.UnitTests\bin\Debug\FizzWare.NBuilder.dll

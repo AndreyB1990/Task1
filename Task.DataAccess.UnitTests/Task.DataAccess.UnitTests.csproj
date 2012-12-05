@@ -35,6 +35,9 @@
   </PropertyGroup>
   <ItemGroup>
     <Content Include="app.config" />
+    <Reference Include="FizzWare.NBuilder">
+      <HintPath>..\packages\NBuilder\FizzWare.NBuilder.dll</HintPath>
+    </Reference>
     <Reference Include="FluentNHibernate">
       <HintPath>..\Task.Web\bin\FluentNHibernate.dll</HintPath>
     </Reference>

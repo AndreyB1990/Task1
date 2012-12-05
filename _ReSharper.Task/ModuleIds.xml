@@ -6,4 +6,5 @@
   <Module PersistentId="5190949A-E31A-49CB-B089-5C2A1D2A5724" ModuleId="Task.DALModels" />
   <Module PersistentId="1ECFBD11-7B4E-4A47-857E-180A9DACBFD2" ModuleId="Task.Metadata" />
   <Module PersistentId="DC128B86-DEA0-4DB9-9A11-BFCA960CC16B" ModuleId="Task.DataAccess.UnitTests_1" />
+  <Module PersistentId="90B92303-B3E8-4CD8-ACCF-06535455DC25" ModuleId="Task.DataAccess.IntegrationTests" />
 </Modules>
