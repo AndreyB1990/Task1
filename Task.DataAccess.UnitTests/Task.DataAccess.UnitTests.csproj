@@ -34,7 +34,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Content Include="app.config" />
     <Reference Include="FizzWare.NBuilder">
       <HintPath>..\packages\NBuilder\FizzWare.NBuilder.dll</HintPath>
     </Reference>
@@ -73,13 +72,12 @@
     </CodeAnalysisDependentAssemblyPaths>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DataAccessUnitTestTools.cs" />
+    <Compile Include="NHibernate\BaseImplementation\NHibernateFixtureBase.cs" />
+    <Compile Include="NHibernate\SessionProviderTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Repositories\BaseImplementation\FixtureBase.cs" />
+    <Compile Include="Repositories\BaseImplementation\RepositoryFixtureBase.cs" />
     <Compile Include="Repositories\GirlRepositoryTests.cs" />
     <Compile Include="Repositories\NewsRepositoryTests.cs" />
-    <Compile Include="Repositories\RoleRepositoryTests.cs" />
-    <Compile Include="Repositories\UserRepositoryTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Task.DALModels\Task.DALModels.csproj">
@@ -95,6 +93,7 @@
       <Name>Task.Repositories</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

@@ -1,131 +1,63 @@
 ﻿using System;
 using System.Linq;
+using FizzWare.NBuilder;
 using NUnit.Framework;
+using Rhino.Mocks;
 using Task.DALModels;
 using Task.DataAccess.UnitTests.Repositories.BaseImplementation;
-using Task.Infrastructure.Helpers;
-using Task.Infrastructure.Ninject;
-using Task.Infrastructure.UnitOfWork;
+using Task.Repositories;
 using Task.Repositories.Interfaces;
 
 namespace Task.DataAccess.UnitTests.Repositories
 {
     [TestFixture]
-    public class GirlRepositoryTests : FixtureBase
+    public class GirlRepositoryTests : RepositoryFixtureBase
     {
         private IGirlRepository _girlRepository;
 
         [Test]
         public void GetBeautifulGirls_returnsValidNumberOfBeautifulGirls()
         {
+            var girls = Builder<Girl>.CreateListOfSize(10)
+                               .All()
+                                    .With(x => x.Height = 175).With(x => x.Weight = 55).With(x => x.BirthDate = new DateTime(1990,2,2))
+                               .Random(3)
+                                    .With(x => x.Height = 180).With(x => x.Weight = 105).With(x => x.BirthDate = new DateTime(1990, 2, 2))
+                               .Random(2)
+                                    .With(x => x.Height = 180).With(x => x.Weight = 55).With(x => x.BirthDate = new DateTime(1990, 2, 2))
+                               .Build();
+            using (Mockery.Record())
+            {
+                Expect.Call(Session.CreateCriteria(typeof(Girl))).Return(CreateCriteria);
+                Expect.Call(SessionFactory.GetCurrentSession()).Return(Session);
+                Expect.Call(SessionProvider.GetSessionFactory()).Return(SessionFactory);
+                Expect.Call(SessionProvider.GetSession()).Return(Session);
+                Expect.Call(CreateCriteria.List<Girl>()).Return(girls);
+            }
+            _girlRepository = new GirlRepository(SessionProvider);
             var count = _girlRepository.GetBeautifulGirls().Count();
-            Assert.AreEqual(count, 2);
+            Assert.AreEqual(count, 5);
         }
 
         [Test]
-        public void GetBeautifulGirls_returnsBeautifulGirlsInRightOrder()
+        public void GetLatestNews_returnsEmptyListIfNumberOfBeautifulGirlsIsNull()
         {
-            var ids = _girlRepository.GetBeautifulGirls().Select(x => x.Id).ToArray();
-            var expIds =
-                _girlRepository.GetBeautifulGirls().OrderBy(x => GirlMethods.GetAge(x)).Select(x => x.Id).ToArray();
-
-            Assert.AreEqual(ids[0], expIds[0]);
-            Assert.AreEqual(ids[1], expIds[1]);
-        }
-
-        [Test]
-        public void GetAll_returnsGirlsInRightOrder()
-        {
-            var ids = _girlRepository.GetAll().Select(x => x.Id).ToArray();
-            var expIds =
-                _girlRepository.GetAll().OrderBy(x => GirlMethods.GetAge(x)).Select(x => x.Id).ToArray();
-            Assert.AreEqual(ids[0], expIds[0]);
-            Assert.AreEqual(ids[1], expIds[1]);
-            Assert.AreEqual(ids[2], expIds[2]);
-        }
-
-        [Test]
-        [ExpectedException(typeof(NHibernate.PropertyValueException))]
-        public void GetLatestNews_nameCannotBeNull_ThrowsException()
-        {
-            using (Locator.GetService<IUnitOfWorkFactory>().Create())
+            var girls = Builder<Girl>.CreateListOfSize(10)
+                                .All()
+                                     .With(x => x.Height = 180).With(x => x.Weight = 105).With(x => x.BirthDate = new DateTime(1990, 2, 2))
+                                .Build();
+            using (Mockery.Record())
             {
-                _girlRepository.Add(new Girl
-                {
-                    BirthDate = new DateTime(1990, 4, 4),
-                    Height = 180,
-                    Weight = 56
-                });
+                Expect.Call(Session.CreateCriteria(typeof(Girl))).Return(CreateCriteria);
+                Expect.Call(SessionFactory.GetCurrentSession()).Return(Session);
+                Expect.Call(SessionProvider.GetSessionFactory()).Return(SessionFactory);
+                Expect.Call(SessionProvider.GetSession()).Return(Session);
+                Expect.Call(CreateCriteria.List<Girl>()).Return(girls);
             }
-        }
-
-        [Test]
-        [ExpectedException(typeof(NHibernate.PropertyValueException))]
-        public void GetLatestNews_heightCannotBeNull_ThrowsException()
-        {
-            using (Locator.GetService<IUnitOfWorkFactory>().Create())
-            {
-                _girlRepository.Add(new Girl
-                {
-                    Name = "Alena",
-                    BirthDate = new DateTime(1990, 4, 4),
-                    Weight = 56
-                });
-            }
-        }
-
-        [Test]
-        [ExpectedException(typeof(NHibernate.PropertyValueException))]
-        public void GetLatestNews_weightCannotBeNull_ThrowsException()
-        {
-            using (Locator.GetService<IUnitOfWorkFactory>().Create())
-            {
-                _girlRepository.Add(new Girl
-                {
-                    Name = "Alena",
-                    BirthDate = new DateTime(1990, 4, 4),
-                    Height = 180
-                });
-            }
-        }
-
-        protected override void CreateInitialData()
-        {
-            _girlRepository = Locator.GetService<IGirlRepository>();
-            var girls = new[]
-                            {
-                                new Girl
-                                    {
-                                        Name = "Alena",
-                                        BirthDate = new DateTime(1990, 4, 4),
-                                        Height = 180,
-                                        Weight = 56
-                                    },
-                                new Girl
-                                    {
-                                        Name = "Alla",
-                                        BirthDate = new DateTime(1992, 7, 7),
-                                        Height = 170,
-                                        Weight = 50
-                                    },
-                                new Girl
-                                    {
-                                        Name = "Marina",
-                                        BirthDate = new DateTime(1992, 7, 7),
-                                        Height = 150,
-                                        Weight = 80
-                                    }
-                            };
-            foreach (var obj in girls)
-            {
-                _girlRepository.Add(obj);
-            }
-        }
-
-        protected override void AfterEachTest()
-        {
-            base.AfterEachTest();
-            _girlRepository.DeleteAll();
+            _girlRepository = new GirlRepository(SessionProvider);
+            var beautiful = _girlRepository.GetBeautifulGirls();
+            Assert.IsNotNull(beautiful);
+            Assert.IsEmpty(beautiful);
         }
     }
 }

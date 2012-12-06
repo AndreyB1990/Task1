@@ -1,0 +1,9 @@
+C:\Users\Andrei_Bonda\Task1\Task.Infrastructure.UnitTests\bin\Debug\Task.Infrastructure.UnitTests.dll
+C:\Users\Andrei_Bonda\Task1\Task.Infrastructure.UnitTests\bin\Debug\Task.Infrastructure.UnitTests.pdb
+C:\Users\Andrei_Bonda\Task1\Task.Infrastructure.UnitTests\bin\Debug\nunit.framework.dll
+C:\Users\Andrei_Bonda\Task1\Task.Infrastructure.UnitTests\bin\Debug\Rhino.Mocks.dll
+C:\Users\Andrei_Bonda\Task1\Task.Infrastructure.UnitTests\bin\Debug\nunit.framework.xml
+C:\Users\Andrei_Bonda\Task1\Task.Infrastructure.UnitTests\bin\Debug\Rhino.Mocks.xml
+C:\Users\Andrei_Bonda\Task1\Task.Infrastructure.UnitTests\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Andrei_Bonda\Task1\Task.Infrastructure.UnitTests\obj\Debug\Task.Infrastructure.UnitTests.dll
+C:\Users\Andrei_Bonda\Task1\Task.Infrastructure.UnitTests\obj\Debug\Task.Infrastructure.UnitTests.pdb

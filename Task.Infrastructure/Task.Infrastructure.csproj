@@ -51,6 +51,8 @@
     <Compile Include="Helpers\PasswordMethods.cs" />
     <Compile Include="Helpers\GirlMethods.cs" />
     <Compile Include="Helpers\Pager.cs" />
+    <Compile Include="Helpers\Providers\Interfaces\IPasswordMethodsProvider.cs" />
+    <Compile Include="Helpers\Providers\PasswordMethodsProvider.cs" />
     <Compile Include="Logging\Logger.cs" />
     <Compile Include="Models\RegisterStatus.cs" />
     <Compile Include="Ninject\Locator.cs" />

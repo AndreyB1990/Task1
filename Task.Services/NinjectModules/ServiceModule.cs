@@ -1,4 +1,6 @@
 ﻿using Ninject.Modules;
+using Task.Infrastructure.Helpers.Providers;
+using Task.Infrastructure.Helpers.Providers.Interfaces;
 using Task.Services.Interfaces;
 
 namespace Task.Services.NinjectModules
@@ -14,6 +16,7 @@ namespace Task.Services.NinjectModules
             Bind<INewsService>().To<NewsService>();
             Bind<IRoleService>().To<RoleService>();
             Bind<IUserService>().To<UserService>();
+            Bind<IPasswordMethodsProvider>().To<PasswordMethodsProvider>();
         }
     }
 }

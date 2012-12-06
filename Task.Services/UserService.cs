@@ -1,6 +1,6 @@
 ﻿using System;
 using Task.DALModels;
-using Task.Infrastructure.Helpers;
+using Task.Infrastructure.Helpers.Providers.Interfaces;
 using Task.Infrastructure.Models;
 using Task.Repositories.Interfaces;
 using Task.Services.Interfaces;
@@ -14,9 +14,12 @@ namespace Task.Services
         /// </summary>
         private readonly IUserRepository _context;
 
-        public UserService(IUserRepository context)
+        private readonly IPasswordMethodsProvider _passwordMethodsProvider;
+
+        public UserService(IUserRepository context, IPasswordMethodsProvider passwordMethodsProvider)
         {
             _context = context;
+            _passwordMethodsProvider = passwordMethodsProvider;
         }
 
         /// <summary>
@@ -29,13 +32,13 @@ namespace Task.Services
         /// <returns></returns>
         public User RegisterUser(string username, string email, string password, out RegisterStatus status)
         {
-            var passwordSalt = PasswordMethods.CreateSalt();
+            var passwordSalt = _passwordMethodsProvider.CreateSalt();
             var newUser = new User
             {
                 Login = username,
                 CreatedDate = DateTime.Now,
                 PasswordSalt = passwordSalt,
-                Password = PasswordMethods.CreatePasswordHash(password, passwordSalt),
+                Password = _passwordMethodsProvider.CreatePasswordHash(password, passwordSalt),
                 Email = email,
                 IsActivated = true,
                 IsLockedOut = false,
@@ -58,7 +61,7 @@ namespace Task.Services
             var user = _context.GetUserByLogin(username);
             if (user == null)
                 return false;
-            if (user.Password == PasswordMethods.CreatePasswordHash(password, user.PasswordSalt))
+            if (user.Password == _passwordMethodsProvider.CreatePasswordHash(password, user.PasswordSalt))
                 return true;
             return false;
         }

@@ -11,7 +11,7 @@ using Task.Repositories.NHibernate.Interfaces;
 
 namespace Task.Repositories
 {
-    public class NewsRepository : NHibernateRepository<News>, INewsRepository
+    class NewsRepository : NHibernateRepository<News>, INewsRepository
     {
         /// <summary>
         /// Base constructor, which initializes NHibernateRepository(News)
@@ -28,10 +28,11 @@ namespace Task.Repositories
         /// <returns></returns>
         public override IQueryable<News> Get(System.Linq.Expressions.Expression<Func<News, bool>> predicate)
         {
-            ICriteria criteriaQuery = Session.CreateCriteria(typeof(News));
-            criteriaQuery.Add(predicate);
-            criteriaQuery.AddOrder(Order.Desc("Date"));
-            return criteriaQuery.List<News>().AsQueryable();
+            return GetAll().Where(predicate).OrderBy(x => x.Date).AsQueryable();
+            //ICriteria criteriaQuery = Session.CreateCriteria(typeof(News));
+            //criteriaQuery.Add(predicate);
+            //criteriaQuery.AddOrder(Order.Desc("Date"));
+            //return criteriaQuery.List<News>().AsQueryable();
         }
         
         /// <summary>

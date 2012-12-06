@@ -5,98 +5,79 @@ using NUnit.Framework;
 using Rhino.Mocks;
 using Task.DALModels;
 using Task.DataAccess.UnitTests.Repositories.BaseImplementation;
-using Task.Infrastructure.Ninject;
-using Task.Infrastructure.UnitOfWork;
+using Task.Infrastructure;
 using Task.Repositories;
 using Task.Repositories.Interfaces;
 
 namespace Task.DataAccess.UnitTests.Repositories
 {
     [TestFixture]
-    public class NewsRepositoryTests : FixtureBase
+    public class NewsRepositoryTests : RepositoryFixtureBase
     {
         private INewsRepository _newsRepository;
 
         [Test]
         public void GetLatestNews_returnsValidNumberOfLatestNews()
         {
-            //var news = Builder<News>.CreateListOfSize(10)
-            //                   .All()
-            //                        .With(x => x.Date = DateTime.Now)
-            //                   .Random(5)
-            //                        .With(x => x.Date = new DateTime(2010, 1, 1))
-            //                   .Build();
-            //using (Mockery.Record())
-            //{
-                //Expect.Call(_newsRepository.GetAll()).Return(news.AsQueryable());
-                //Expect.Call(CreateCriteria.List<News>()).Return(news);
-            //}
-            var count = _newsRepository.GetLatestNews().Count();
-            Assert.AreEqual(count, 5);
-        }
-
-        [Test]
-        [ExpectedException(typeof(NHibernate.PropertyValueException))]
-        public void GetLatestNews_shortDescriptionCannotBeNull_ThrowsException()
-        {
-            using (Locator.GetService<IUnitOfWorkFactory>().Create())
+            var news = Builder<News>.CreateListOfSize(10)
+                               .All()
+                                    .With(x => x.Date = DateTime.Now)
+                               .Random(5)
+                                    .With(x => x.Date = new DateTime(2010, 1, 1))
+                               .Build();
+            using (Mockery.Record())
             {
-                _newsRepository.Add(new News { Date = DateTime.Now, Title = "News_with_Exception" });
+                Expect.Call(Session.CreateCriteria(typeof(News))).Return(CreateCriteria);
+                Expect.Call(SessionFactory.GetCurrentSession()).Return(Session);
+                Expect.Call(SessionProvider.GetSessionFactory()).Return(SessionFactory);
+                Expect.Call(SessionProvider.GetSession()).Return(Session);
+                Expect.Call(CreateCriteria.List<News>()).Return(news);
             }
-        }
-
-        [Test]
-        public void GetLatestNews_descriptionCanBeNull_DoesNotThrowsException()
-        {
-            using (Locator.GetService<IUnitOfWorkFactory>().Create())
-            {
-                Assert.DoesNotThrow(() => _newsRepository.Add(new News { ShortDescription = "Short Description", Date = DateTime.Now, Title = "News_with_Exception" }));
-            }
-        }
-
-        protected override void CreateInitialData()
-        {
-            //_newsRepository = Locator.GetService<INewsRepository>();
-            //_newsRepository = Mockery.DynamicMock<NewsRepository>(SessionProvider);
             _newsRepository = new NewsRepository(SessionProvider);
-            
-            //var news = new[]
-            //               {
-            //                   new News
-            //                       {
-            //                           Date = new DateTime(2010,1,1),
-            //                           Title = "News 1",
-            //                           ShortDescription = "News 1"
-            //                       },
-            //                   new News
-            //                       {
-            //                           Date = new DateTime(2012,10,10),
-            //                           Title = "News 2",
-            //                           ShortDescription = "News 2"
-            //                       },
-            //                   new News
-            //                       {
-            //                           Date = DateTime.Now,
-            //                           Title = "News 3",
-            //                           ShortDescription = "News 3"
-            //                       },
-            //                   new News
-            //                       {
-            //                           Date = DateTime.Now,
-            //                           Title = "News 4",
-            //                           ShortDescription = "News 4"
-            //                       }
-            //               };
-            //foreach (var obj in news)
-            //{
-            //    _newsRepository.Add(obj);
-            //}
+            var newsTime = DateTime.Now - Constants.TIME_OF_NEWS;
+            var latestNews = _newsRepository.GetLatestNews();
+            Assert.AreEqual(latestNews.Count(), 5);
+            Assert.GreaterOrEqual(latestNews.First().Date, newsTime);
         }
 
-        //protected override void AfterEachTest()
+        [Test]
+        public void GetLatestNews_returnsEmptyListIfNumberOfLatestNewsIsNull()
+        {
+            var news = Builder<News>.CreateListOfSize(10)
+                               .All()
+                                    .With(x => x.Date = new DateTime(2010, 1, 1))
+                               .Build();
+            using (Mockery.Record())
+            {
+                Expect.Call(Session.CreateCriteria(typeof(News))).Return(CreateCriteria);
+                Expect.Call(SessionFactory.GetCurrentSession()).Return(Session);
+                Expect.Call(SessionProvider.GetSessionFactory()).Return(SessionFactory);
+                Expect.Call(SessionProvider.GetSession()).Return(Session);
+                Expect.Call(CreateCriteria.List<News>()).Return(news);
+            }
+            _newsRepository = new NewsRepository(SessionProvider);
+            var latestNews = _newsRepository.GetLatestNews();
+            Assert.IsNotNull(latestNews);
+            Assert.IsEmpty(latestNews);
+        }
+
+        //[Test]
+        //[ExpectedException(typeof(NHibernate.PropertyValueException))]
+        //public void GetLatestNews_shortDescriptionCannotBeNull_ThrowsException()
         //{
-        //    base.AfterEachTest();
-        //    _newsRepository.DeleteAll();
+        //    //using (Locator.GetService<IUnitOfWorkFactory>().Create())
+        //    //{
+        //        _newsRepository.Add(new News { Date = DateTime.Now, Title = "News_with_Exception" });
+        //    //}
+        //}
+
+        //[Test]
+        //public void GetLatestNews_descriptionCanBeNull_DoesNotThrowsException()
+        //{
+        //    //using (Locator.GetService<IUnitOfWorkFactory>().Create())
+        //    //{
+        //        Assert.DoesNotThrow(() => _newsRepository.Add(new News { ShortDescription = "Short Description", Date = DateTime.Now, Title = "News_with_Exception" }));
+        //    //}
         //}
     }
 }

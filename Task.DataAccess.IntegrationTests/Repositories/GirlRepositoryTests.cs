@@ -8,7 +8,7 @@ using Task.Infrastructure.Ninject;
 using Task.Infrastructure.UnitOfWork;
 using Task.Repositories.Interfaces;
 
-namespace Task.DataAccess.UnitTests.Repositories
+namespace Task.DataAccess.IntegrationTests.Repositories
 {
     [TestFixture]
     public class GirlRepositoryTests : FixtureBase

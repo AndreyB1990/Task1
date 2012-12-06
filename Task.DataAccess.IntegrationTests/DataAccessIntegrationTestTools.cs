@@ -14,7 +14,7 @@ using System.Data.SQLite;
 
 namespace Task.DataAccess.IntegrationTests
 {
-    public static class DataAccessUnitTestTools
+    public static class DataAccessIntegrationTestTools
     {
         public static HttpContext FakeHttpContext()
         {
