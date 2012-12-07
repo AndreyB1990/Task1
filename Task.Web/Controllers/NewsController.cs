@@ -28,7 +28,7 @@ namespace Task.Web.Controllers
         /// </summary>
         /// <param name="page"></param>
         /// <returns></returns>
-        public ActionResult List(int? page)
+        public JsonResult List(int? page)
         {
             using (_unitOfWorkFactory.Create())
             {
@@ -46,7 +46,7 @@ namespace Task.Web.Controllers
         /// Returns JSON object with latest news
         /// </summary>
         /// <returns></returns>
-        public ActionResult LatestNews()
+        public JsonResult LatestNews()
         {
             using (_unitOfWorkFactory.Create())
             {
@@ -60,7 +60,7 @@ namespace Task.Web.Controllers
         /// </summary>
         /// <param name="id"></param>
         /// <returns></returns>
-        public ActionResult Item(int id)
+        public JsonResult Item(int id)
         {
             using (_unitOfWorkFactory.Create())
             {

@@ -19,6 +19,7 @@ namespace Task.DataAccess.UnitTests.Repositories
         [Test]
         public void GetLatestNews_returnsValidNumberOfLatestNews()
         {
+            IQueryable<News> latestNews;
             var news = Builder<News>.CreateListOfSize(10)
                                .All()
                                     .With(x => x.Date = DateTime.Now)
@@ -28,14 +29,15 @@ namespace Task.DataAccess.UnitTests.Repositories
             using (Mockery.Record())
             {
                 Expect.Call(Session.CreateCriteria(typeof(News))).Return(CreateCriteria);
-                Expect.Call(SessionFactory.GetCurrentSession()).Return(Session);
-                Expect.Call(SessionProvider.GetSessionFactory()).Return(SessionFactory);
                 Expect.Call(SessionProvider.GetSession()).Return(Session);
                 Expect.Call(CreateCriteria.List<News>()).Return(news);
             }
-            _newsRepository = new NewsRepository(SessionProvider);
             var newsTime = DateTime.Now - Constants.TIME_OF_NEWS;
-            var latestNews = _newsRepository.GetLatestNews();
+            using (Mockery.Playback())
+            {
+                _newsRepository = new NewsRepository(SessionProvider);
+                latestNews = _newsRepository.GetLatestNews();
+            }
             Assert.AreEqual(latestNews.Count(), 5);
             Assert.GreaterOrEqual(latestNews.First().Date, newsTime);
         }
@@ -43,6 +45,7 @@ namespace Task.DataAccess.UnitTests.Repositories
         [Test]
         public void GetLatestNews_returnsEmptyListIfNumberOfLatestNewsIsNull()
         {
+            IQueryable<News> latestNews;
             var news = Builder<News>.CreateListOfSize(10)
                                .All()
                                     .With(x => x.Date = new DateTime(2010, 1, 1))
@@ -50,13 +53,14 @@ namespace Task.DataAccess.UnitTests.Repositories
             using (Mockery.Record())
             {
                 Expect.Call(Session.CreateCriteria(typeof(News))).Return(CreateCriteria);
-                Expect.Call(SessionFactory.GetCurrentSession()).Return(Session);
-                Expect.Call(SessionProvider.GetSessionFactory()).Return(SessionFactory);
                 Expect.Call(SessionProvider.GetSession()).Return(Session);
                 Expect.Call(CreateCriteria.List<News>()).Return(news);
             }
-            _newsRepository = new NewsRepository(SessionProvider);
-            var latestNews = _newsRepository.GetLatestNews();
+            using (Mockery.Playback())
+            {
+                _newsRepository = new NewsRepository(SessionProvider);
+                latestNews = _newsRepository.GetLatestNews();
+            }
             Assert.IsNotNull(latestNews);
             Assert.IsEmpty(latestNews);
         }

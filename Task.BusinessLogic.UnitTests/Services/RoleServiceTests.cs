@@ -35,15 +35,152 @@ namespace Task.BusinessLogic.UnitTests.Services
                 Expect.Call(_roleRepository.GetRoleByRoleName("User")).Return(roles[0]);
                 Expect.Call(_roleRepository.GetRoleByRoleName("Admin")).Return(roles[1]);
             }
-            _roleService = new RoleService(_roleRepository, _userRepository);
-            _roleService.AddUsersToRoles(new string[] {"A", "B"}, new string[] {"User", "Admin"});
+            using (Mockery.Playback())
+            {
+                _roleService = new RoleService(_roleRepository, _userRepository);
+                _roleService.AddUsersToRoles(new[] {"A", "B"}, new[] {"User", "Admin"});
+            }
             Assert.AreEqual(users[0].Roles.Count, 2);
             Assert.AreEqual(users[1].Roles.Count, 2);
         }
 
         [Test]
+        public void DeleteRole_returnsTrueIfRoleExists()
+        {
+            bool validate;
+            var role = Builder<Role>.CreateNew().Build();
+            _userRepository = Mockery.DynamicMock<IUserRepository>();
+            _roleRepository = Mockery.DynamicMock<IRoleRepository>();
+            using (Mockery.Record())
+            {
+                Expect.Call(_roleRepository.GetRoleByRoleName(null)).IgnoreArguments().Return(role);
+                Expect.Call(() => _roleRepository.Delete(Arg<Role>.Is.Anything)).Repeat.Once();
+            }
+            using (Mockery.Playback())
+            {
+                _roleService = new RoleService(_roleRepository, _userRepository);
+                validate = _roleService.DeleteRole(role.RoleName);
+            }
+            Assert.AreEqual(true, validate);
+        }
+
+        [Test]
+        public void DeleteRole_returnsFalseIfRoleNotExists()
+        {
+            bool validate;
+            _userRepository = Mockery.DynamicMock<IUserRepository>();
+            _roleRepository = Mockery.DynamicMock<IRoleRepository>();
+            using (Mockery.Record())
+            {
+                Expect.Call(_roleRepository.GetRoleByRoleName(null)).IgnoreArguments().Return(null);
+                DoNotExpect.Call(() => _roleRepository.Delete(Arg<Role>.Is.Anything));
+            }
+            using (Mockery.Playback())
+            {
+                _roleService = new RoleService(_roleRepository, _userRepository);
+                validate = _roleService.DeleteRole("UnknownRole");
+            }
+            Assert.AreEqual(false, validate);
+        }
+
+        [Test]
+        public void RoleExists_returnsTrueIfRoleExists()
+        {
+            bool validate;
+            var role = Builder<Role>.CreateNew().Build();
+            _userRepository = Mockery.DynamicMock<IUserRepository>();
+            _roleRepository = Mockery.DynamicMock<IRoleRepository>();
+            using (Mockery.Record())
+            {
+                Expect.Call(_roleRepository.GetRoleByRoleName(null)).IgnoreArguments().Return(role);
+            }
+            using (Mockery.Playback())
+            {
+                _roleService = new RoleService(_roleRepository, _userRepository);
+                validate = _roleService.RoleExists(role.RoleName);
+            }
+            Assert.AreEqual(true, validate);
+        }
+
+        [Test]
+        public void RoleExists_returnsFalseIfRoleNotExists()
+        {
+            bool validate;
+            _userRepository = Mockery.DynamicMock<IUserRepository>();
+            _roleRepository = Mockery.DynamicMock<IRoleRepository>();
+            using (Mockery.Record())
+            {
+                Expect.Call(_roleRepository.GetRoleByRoleName(null)).IgnoreArguments().Return(null);
+            }
+            using (Mockery.Playback())
+            {
+                _roleService = new RoleService(_roleRepository, _userRepository);
+                validate = _roleService.RoleExists("UnknownRole");
+            }
+            Assert.AreEqual(false, validate);
+        }
+
+        [Test]
+        public void UserInRoleExists_returnsTrueIfUserInRoleExists()
+        {
+            bool validate;
+            var user = Builder<User>.CreateNew().Build();
+            var role = Builder<Role>.CreateNew().With(x => x.Users = new List<User> { user }).Build();
+            _userRepository = Mockery.DynamicMock<IUserRepository>();
+            _roleRepository = Mockery.DynamicMock<IRoleRepository>();
+            using (Mockery.Record())
+            {
+                Expect.Call(_roleRepository.GetRoleByRoleName(null)).IgnoreArguments().Return(role);
+            }
+            using (Mockery.Playback())
+            {
+                _roleService = new RoleService(_roleRepository, _userRepository);
+                validate = _roleService.UserInRoleExists(role.RoleName);
+            }
+            Assert.AreEqual(true, validate);
+        }
+
+        [Test]
+        public void UserInRoleExists_returnsFalseIfUserInRoleNotExists()
+        {
+            bool validate;
+            var role = Builder<Role>.CreateNew().With(x => x.Users = new List<User>()).Build();
+            _userRepository = Mockery.DynamicMock<IUserRepository>();
+            _roleRepository = Mockery.DynamicMock<IRoleRepository>();
+            using (Mockery.Record())
+            {
+                Expect.Call(_roleRepository.GetRoleByRoleName(null)).IgnoreArguments().Return(role);
+            }
+            using (Mockery.Playback())
+            {
+                _roleService = new RoleService(_roleRepository, _userRepository);
+                validate = _roleService.UserInRoleExists(role.RoleName);
+            }
+            Assert.AreEqual(false, validate);
+        }
+
+        [Test]
+        public void UserInRoleExists_returnsFalseIfRoleNotExists()
+        {
+            bool validate;
+            _userRepository = Mockery.DynamicMock<IUserRepository>();
+            _roleRepository = Mockery.DynamicMock<IRoleRepository>();
+            using (Mockery.Record())
+            {
+                Expect.Call(_roleRepository.GetRoleByRoleName(null)).IgnoreArguments().Return(null);
+            }
+            using (Mockery.Playback())
+            {
+                _roleService = new RoleService(_roleRepository, _userRepository);
+                validate = _roleService.UserInRoleExists("UnknownRole");
+            }
+            Assert.AreEqual(false, validate);
+        }
+
+        [Test]
         public void IsUserInRole_returnsFalse()
         {
+            bool validate;
             var role = Builder<Role>.CreateNew().Build();
             var user = Builder<User>.CreateNew().Build();
             _userRepository = Mockery.DynamicMock<IUserRepository>();
@@ -53,14 +190,18 @@ namespace Task.BusinessLogic.UnitTests.Services
                 Expect.Call(_userRepository.GetUserByLogin(null)).IgnoreArguments().Return(user);
                 Expect.Call(_roleRepository.GetRoleByRoleName(null)).IgnoreArguments().Return(role);
             }
-            _roleService = new RoleService(_roleRepository, _userRepository);
-            var validate = _roleService.IsUserInRole(user.Login, role.RoleName);
+            using (Mockery.Playback())
+            {
+                _roleService = new RoleService(_roleRepository, _userRepository);
+                validate = _roleService.IsUserInRole(user.Login, role.RoleName);
+            }
             Assert.AreEqual(false, validate);
         }
 
         [Test]
         public void IsUserInRole_returnsTrue()
         {
+            bool validate;
             var role = Builder<Role>.CreateNew().Build();
             var user = Builder<User>.CreateNew().With(x => x.Roles = new List<Role> { role }).Build();
             _userRepository = Mockery.DynamicMock<IUserRepository>();
@@ -70,30 +211,37 @@ namespace Task.BusinessLogic.UnitTests.Services
                 Expect.Call(_userRepository.GetUserByLogin(null)).IgnoreArguments().Return(user);
                 Expect.Call(_roleRepository.GetRoleByRoleName(null)).IgnoreArguments().Return(role);
             }
-            _roleService = new RoleService(_roleRepository, _userRepository);
-            var validate = _roleService.IsUserInRole(user.Login, role.RoleName);
+            using (Mockery.Playback())
+            {
+                _roleService = new RoleService(_roleRepository, _userRepository);
+                validate = _roleService.IsUserInRole(user.Login, role.RoleName);
+            }
             Assert.AreEqual(true, validate);
         }
 
         [Test]
         public void UserInRoleExists_returnsFalse()
         {
+            bool validate;
             var role = Builder<Role>.CreateNew().Build();
-            var user = Builder<User>.CreateNew().Build();
             _userRepository = Mockery.DynamicMock<IUserRepository>();
             _roleRepository = Mockery.DynamicMock<IRoleRepository>();
             using (Mockery.Record())
             {
                 Expect.Call(_roleRepository.GetRoleByRoleName(null)).IgnoreArguments().Return(role);
             }
-            _roleService = new RoleService(_roleRepository, _userRepository);
-            var validate = _roleService.UserInRoleExists(role.RoleName);
+            using (Mockery.Playback())
+            {
+                _roleService = new RoleService(_roleRepository, _userRepository);
+                validate = _roleService.UserInRoleExists(role.RoleName);
+            }
             Assert.AreEqual(false, validate);
         }
 
         [Test]
         public void UserInRoleExists_returnsTrue()
         {
+            bool validate;
             var role = Builder<Role>.CreateNew().Build();
             var user = Builder<User>.CreateNew().With(x => x.Roles = new List<Role> { role }).Build();
             role.Users.Add(user);
@@ -101,11 +249,13 @@ namespace Task.BusinessLogic.UnitTests.Services
             _roleRepository = Mockery.DynamicMock<IRoleRepository>();
             using (Mockery.Record())
             {
-                Expect.Call(_userRepository.GetUserByLogin(null)).IgnoreArguments().Return(user);
                 Expect.Call(_roleRepository.GetRoleByRoleName(null)).IgnoreArguments().Return(role);
             }
-            _roleService = new RoleService(_roleRepository, _userRepository);
-            var validate = _roleService.UserInRoleExists(role.RoleName);
+            using (Mockery.Playback())
+            {
+                _roleService = new RoleService(_roleRepository, _userRepository);
+                validate = _roleService.UserInRoleExists(role.RoleName);
+            }
             Assert.AreEqual(true, validate);
         }
 
@@ -127,8 +277,11 @@ namespace Task.BusinessLogic.UnitTests.Services
                 Expect.Call(_roleRepository.GetRoleByRoleName("User")).Return(roles[0]);
                 Expect.Call(_roleRepository.GetRoleByRoleName("Admin")).Return(roles[1]);
             }
-            _roleService = new RoleService(_roleRepository, _userRepository);
-            _roleService.RemoveUsersFromRoles(new string[] { "A", "B" }, new string[] { "User", "Admin" });
+            using (Mockery.Playback())
+            {
+                _roleService = new RoleService(_roleRepository, _userRepository);
+                _roleService.RemoveUsersFromRoles(new[] {"A", "B"}, new[] {"User", "Admin"});
+            }
             Assert.AreEqual(users[0].Roles.Count, 0);
             Assert.AreEqual(users[1].Roles.Count, 0);
         }

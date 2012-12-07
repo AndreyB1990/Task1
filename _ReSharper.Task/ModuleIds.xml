@@ -9,4 +9,5 @@
   <Module PersistentId="90B92303-B3E8-4CD8-ACCF-06535455DC25" ModuleId="Task.DataAccess.IntegrationTests" />
   <Module PersistentId="EC6592C7-D475-49A4-9E35-7F858FFDB986" ModuleId="Task.BusinessLogic.UnitTests" />
   <Module PersistentId="FDF2FE23-6DB2-41F3-946D-CBE6A656CA8F" ModuleId="Task.Infrastructure.UnitTests" />
+  <Module PersistentId="8B423B57-1DEE-4AB0-93AC-B66195F795C7" ModuleId="Task.Web.UnitTests" />
 </Modules>

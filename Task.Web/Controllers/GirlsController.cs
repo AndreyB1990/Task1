@@ -29,7 +29,7 @@ namespace Task.Web.Controllers
         /// <param name="page"></param>
         /// <param name="isBeautiful"></param>
         /// <returns></returns>
-        public ActionResult List(int? page, bool? isBeautiful)
+        public JsonResult List(int? page, bool? isBeautiful)
         {
             using (_unitOfWorkFactory.Create())
             {
@@ -37,7 +37,7 @@ namespace Task.Web.Controllers
                 if (isBeautiful == null) isBeautiful = false;
                 var skip = (int) ((page - 1) * Constants.GIRLS_PAGER_LINKS_PER_PAGE);
                 const int take = Constants.GIRLS_PAGER_LINKS_PER_PAGE;
-                var girls = (bool)(isBeautiful) ? _girlsService.GetBeautifulGirls().Skip(skip).Take(take) : _girlsService.Get(skip, take);
+                var girls = (bool)(isBeautiful) ? _girlsService.GetBeautifulGirls().Skip(skip).Take(take).ToList() : _girlsService.Get(skip, take);
                 return Json(girls.ConvertToGirlModels(), JsonRequestBehavior.AllowGet);
             }
         }

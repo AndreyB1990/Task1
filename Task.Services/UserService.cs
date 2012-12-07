@@ -75,8 +75,8 @@ namespace Task.Services
         {
             var user = _context.GetUserByLogin(username);
             if (user == null)
-                return true;
-            return false;
+                return false;
+            return true;
         }
 
         /// <summary>
@@ -88,8 +88,8 @@ namespace Task.Services
         {
             var user = _context.GetUserByEmail(email);
             if (user == null)
-                return true;
-            return false;
+                return false;
+            return true;
         }
         
         /// <summary>
@@ -125,7 +125,7 @@ namespace Task.Services
             var user = _context.GetUserByLogin(username);
             if (user == null)
                 return false;
-            user.IsLockedOut = false;
+            user.IsLockedOut = true;
             return true;
         }
 
@@ -139,7 +139,7 @@ namespace Task.Services
             var user = _context.GetUserByLogin(username);
             if (user == null)
                 return false;
-            user.IsLockedOut = true;
+            user.IsLockedOut = false;
             return true;
         }
 
