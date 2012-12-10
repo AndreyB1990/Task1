@@ -5,7 +5,7 @@ using Task.Services.Interfaces;
 
 namespace Task.Services
 {
-    class RoleService : IRoleService
+    public class RoleService : IRoleService
     {
         /// <summary>
         /// Data context
@@ -141,7 +141,7 @@ namespace Task.Services
             var user = _usersContext.GetUserByLogin(username);
             return user != null && user.Roles.Contains(role);
         }
-        
+
         /// <summary>
         /// Removes users with usernames to roles from rolenames
         /// </summary>
