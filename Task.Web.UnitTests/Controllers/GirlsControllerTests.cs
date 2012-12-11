@@ -31,7 +31,7 @@ namespace Task.Web.UnitTests.Controllers
             for (int page = 1; page < 10; page++)
             {
                 Mockery = new MockRepository();
-                var girlService = Mockery.DynamicMock<IGirlService>();
+                var girlService = Mockery.Stub<IGirlService>();
                 UnitOfWorkFactory = Mockery.DynamicMock<IUnitOfWorkFactory>();
                 UnitOfWork = Mockery.DynamicMock<IUnitOfWork>();
                 using (Mockery.Record())

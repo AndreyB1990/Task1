@@ -5,7 +5,7 @@ using Task.Services.Interfaces;
 
 namespace Task.Services
 {
-    public class RoleService : IRoleService
+    class RoleService : IRoleService
     {
         /// <summary>
         /// Data context
@@ -51,7 +51,7 @@ namespace Task.Services
         /// </summary>
         /// <param name="user"></param>
         /// <param name="role"></param>
-        public void AddRoleToUser(User user, Role role)
+        public virtual void AddRoleToUser(User user, Role role)
         {
             if (!user.Roles.Contains(role))
             {

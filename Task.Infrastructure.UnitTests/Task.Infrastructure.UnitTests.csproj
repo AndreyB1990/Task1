@@ -53,7 +53,6 @@
   <ItemGroup>
     <Compile Include="BaseImplementation\InfrastructureFixtureBase.cs" />
     <Compile Include="LoggerTests.cs" />
-    <Compile Include="NewsRepositoryTests.cs" />
     <Compile Include="PasswordMethodsTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

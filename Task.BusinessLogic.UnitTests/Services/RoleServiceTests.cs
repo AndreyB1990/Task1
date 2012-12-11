@@ -26,8 +26,8 @@ namespace Task.BusinessLogic.UnitTests.Services
             var roles = Builder<Role>.CreateListOfSize(2).
                 TheFirst(1).With(x => x.RoleName = "User").
                 TheLast(1).With( x => x.RoleName = "Admin").Build();
-            _userRepository = Mockery.Stub<IUserRepository>();//.DynamicMock<IUserRepository>();
-            _roleRepository = Mockery.Stub<IRoleRepository>();//.DynamicMock<IRoleRepository>();
+            _userRepository = Mockery.Stub<IUserRepository>();
+            _roleRepository = Mockery.Stub<IRoleRepository>();
             using (Mockery.Record())
             {
                 Expect.Call(_userRepository.GetUserByLogin("A")).Return(users[0]);
@@ -44,40 +44,37 @@ namespace Task.BusinessLogic.UnitTests.Services
             Assert.AreEqual(users[1].Roles.Count, 2);
         }
 
-        //[Test]
-        //public void AddUsersToRoles_methodAddUserToRoleIsCalled()
-        //{
-        //    var users = Builder<User>.CreateListOfSize(2).
-        //        TheFirst(1).With(x => x.Login = "A").
-        //        TheLast(1).With(x => x.Login = "B").Build();
-        //    var roles = Builder<Role>.CreateListOfSize(2).
-        //        TheFirst(1).With(x => x.RoleName = "User").
-        //        TheLast(1).With(x => x.RoleName = "Admin").Build();
-        //    _userRepository = Mockery.Stub<IUserRepository>();
-        //    _roleRepository = Mockery.Stub<IRoleRepository>();
-        //    var mockRoleService = Mockery.PartialMock<RoleService>(_roleRepository, _userRepository);
-            
-        //    using (Mockery.Record())
-        //    {
-        //        Expect.Call(_userRepository.GetUserByLogin("A")).Return(users[0]);
-        //        Expect.Call(_userRepository.GetUserByLogin("B")).Return(users[1]);
-        //        Expect.Call(_roleRepository.GetRoleByRoleName("User")).Return(roles[0]);
-        //        Expect.Call(_roleRepository.GetRoleByRoleName("Admin")).Return(roles[1]);
+        [Test]
+        public void AddUsersToRoles_methodAddUserToRoleIsCalled()
+        {
+            var users = Builder<User>.CreateListOfSize(2).
+                TheFirst(1).With(x => x.Login = "A").
+                TheLast(1).With(x => x.Login = "B").Build();
+            var roles = Builder<Role>.CreateListOfSize(2).
+                TheFirst(1).With(x => x.RoleName = "User").
+                TheLast(1).With(x => x.RoleName = "Admin").Build();
+            _userRepository = Mockery.Stub<IUserRepository>();
+            _roleRepository = Mockery.Stub<IRoleRepository>();
+            var mockRoleService = Mockery.PartialMock<RoleService>(_roleRepository, _userRepository);
+            var t = users[0];
+            using (Mockery.Record())
+            {
+                Expect.Call(_userRepository.GetUserByLogin("A")).Return(users[0]);
+                Expect.Call(_userRepository.GetUserByLogin("B")).Return(users[1]);
+                Expect.Call(_roleRepository.GetRoleByRoleName("User")).Return(roles[0]);
+                Expect.Call(_roleRepository.GetRoleByRoleName("Admin")).Return(roles[1]);
+                Expect.Call(() => mockRoleService.AddRoleToUser(Arg<User>.Is.Equal(users[0]), Arg<Role>.Is.Equal(roles[0]))).Repeat.Once();
+                Expect.Call(() => mockRoleService.AddRoleToUser(Arg<User>.Is.Equal(users[0]), Arg<Role>.Is.Equal(roles[1]))).Repeat.Once();
+                Expect.Call(() => mockRoleService.AddRoleToUser(Arg<User>.Is.Equal(users[1]), Arg<Role>.Is.Equal(roles[0]))).Repeat.Once();
+                Expect.Call(() => mockRoleService.AddRoleToUser(Arg<User>.Is.Equal(users[1]), Arg<Role>.Is.Equal(roles[1]))).Repeat.Once();
+            }
 
-        //        //mockRoleService.AssertWasCalled(x => x.AddUserToRole(Arg<Role>.Is.Anything, Arg<User>.Is.Anything));
-        //        //Expect.Call(mockRoleService.AddUserToRole(Arg<Role>.Is.Anything, Arg<User>.Is.Anything)).Repeat.Twice();
-        //    }
-            
-        //    using (Mockery.Playback())
-        //    {
-        //        _roleService = new RoleService(_roleRepository, _userRepository);
-        //        mockRoleService.AddUsersToRoles(new[] { "A", "B" }, new[] { "User", "Admin" });
-        //        mockRoleService.AssertWasCalled(x => x.AddRoleToUser(Arg<User>.Is.Equal(users[0]), Arg<Role>.Is.Equal(roles[0])));
-        //    }
-                
-        //    //Assert.AreEqual(users[0].Roles.Count, 2);
-        //    //Assert.AreEqual(users[1].Roles.Count, 2);
-        //}
+            using (Mockery.Playback())
+            {
+                _roleService = new RoleService(_roleRepository, _userRepository);
+                mockRoleService.AddUsersToRoles(new[] { "A", "B" }, new[] { "User", "Admin" });
+            }
+        }
 
         [Test]
         public void AddRoleToUser_addRoleToUserIfUserNotContainsRole()

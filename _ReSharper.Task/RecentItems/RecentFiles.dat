@@ -1,6 +1,5 @@
 ﻿<RecentFiles>
   <RecentFiles>
-    <File id="0862A143-C7C1-422D-B896-BC08984165EC/d:Helpers/f:GirlMethods.cs" caret="0" fromTop="0" />
     <File id="6C6A97FB-271D-4214-A1EB-8BE6DD3A1ACB/f:RoleRepository.cs" caret="0" fromTop="0" />
     <File id="5FE0A683-5E46-44A3-AB5F-65BC463B85C1/d:Views/d:Girls/f:Index.cshtml" caret="0" fromTop="0" />
     <File id="FDF2FE23-6DB2-41F3-946D-CBE6A656CA8F/f:LoggerTests.cs" caret="225" fromTop="8" />
@@ -9,7 +8,6 @@
     <File id="0862A143-C7C1-422D-B896-BC08984165EC/f:Constants.cs" caret="0" fromTop="0" />
     <File id="0862A143-C7C1-422D-B896-BC08984165EC/d:Logging/f:Logger.cs" caret="0" fromTop="0" />
     <File id="FDF2FE23-6DB2-41F3-946D-CBE6A656CA8F/f:PasswordMethodsTests.cs" caret="303" fromTop="14" />
-    <File id="EC6592C7-D475-49A4-9E35-7F858FFDB986/d:Services/d:BaseImplementation/f:ServiceFixtureBase.cs" caret="551" fromTop="26" />
     <File id="0862A143-C7C1-422D-B896-BC08984165EC/d:Helpers/f:PasswordMethods.cs" caret="988" fromTop="29" />
     <File id="DC128B86-DEA0-4DB9-9A11-BFCA960CC16B/d:Repositories/d:BaseImplementation/f:RepositoryFixtureBase.cs" caret="734" fromTop="19" />
     <File id="6C6A97FB-271D-4214-A1EB-8BE6DD3A1ACB/d:Interfaces/f:IGirlRepository.cs" caret="361" fromTop="11" />
@@ -28,8 +26,10 @@
     <File id="DC128B86-DEA0-4DB9-9A11-BFCA960CC16B/d:NHibernate/f:SessionProviderTests.cs" caret="403" fromTop="18" />
     <File id="518DA726-FBCD-4A7A-8969-DC9DE2DFE6C3/f:UserService.cs" caret="4393" fromTop="1" />
     <File id="EC6592C7-D475-49A4-9E35-7F858FFDB986/d:Services/f:UserServiceTests.cs" caret="6436" fromTop="27" />
-    <File id="518DA726-FBCD-4A7A-8969-DC9DE2DFE6C3/f:RoleService.cs" caret="3848" fromTop="8" />
-    <File id="EC6592C7-D475-49A4-9E35-7F858FFDB986/d:Services/f:RoleServiceTests.cs" caret="334" fromTop="8" />
+    <File id="518DA726-FBCD-4A7A-8969-DC9DE2DFE6C3/d:Properties/f:AssemblyInfo.cs" caret="0" fromTop="0" />
+    <File id="EC6592C7-D475-49A4-9E35-7F858FFDB986/d:Services/d:BaseImplementation/f:ServiceFixtureBase.cs" caret="93" fromTop="2" />
+    <File id="518DA726-FBCD-4A7A-8969-DC9DE2DFE6C3/f:RoleService.cs" caret="1880" fromTop="24" />
+    <File id="EC6592C7-D475-49A4-9E35-7F858FFDB986/d:Services/f:RoleServiceTests.cs" caret="2765" fromTop="60" />
   </RecentFiles>
   <RecentEdits>
     <File id="6C6A97FB-271D-4214-A1EB-8BE6DD3A1ACB/f:NewsRepository.cs" caret="339" fromTop="13" />
@@ -46,7 +46,6 @@
     <File id="0862A143-C7C1-422D-B896-BC08984165EC/d:Helpers/d:Providers/d:Interfaces/f:IPasswordMethodsProvider.cs" caret="37" fromTop="0" />
     <File id="0862A143-C7C1-422D-B896-BC08984165EC/d:Helpers/d:Providers/f:PasswordMethodsProvider.cs" caret="122" fromTop="4" />
     <File id="518DA726-FBCD-4A7A-8969-DC9DE2DFE6C3/d:NinjectModules/f:ServiceModule.cs" caret="671" fromTop="18" />
-    <File id="518DA726-FBCD-4A7A-8969-DC9DE2DFE6C3/f:RoleService.cs" caret="3857" fromTop="23" />
     <File id="FDF2FE23-6DB2-41F3-946D-CBE6A656CA8F/d:BaseImplementation/f:InfrastructureFixtureBase.cs" caret="0" fromTop="0" />
     <File id="EC6592C7-D475-49A4-9E35-7F858FFDB986/d:Services/d:BaseImplementation/f:ServiceFixtureBase.cs" caret="679" fromTop="32" />
     <File id="FDF2FE23-6DB2-41F3-946D-CBE6A656CA8F/f:PasswordMethodsTests.cs" caret="0" fromTop="0" />
@@ -61,6 +60,7 @@
     <File id="8B423B57-1DEE-4AB0-93AC-B66195F795C7/d:Controllers/f:NewsControllerTests.cs" caret="1519" fromTop="21" />
     <File id="518DA726-FBCD-4A7A-8969-DC9DE2DFE6C3/f:UserService.cs" caret="4587" fromTop="30" />
     <File id="EC6592C7-D475-49A4-9E35-7F858FFDB986/d:Services/f:UserServiceTests.cs" caret="5285" fromTop="6" />
-    <File id="EC6592C7-D475-49A4-9E35-7F858FFDB986/d:Services/f:RoleServiceTests.cs" caret="6158" fromTop="17" />
+    <File id="518DA726-FBCD-4A7A-8969-DC9DE2DFE6C3/f:RoleService.cs" caret="154" fromTop="7" />
+    <File id="EC6592C7-D475-49A4-9E35-7F858FFDB986/d:Services/f:RoleServiceTests.cs" caret="3946" fromTop="34" />
   </RecentEdits>
 </RecentFiles>

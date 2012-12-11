@@ -22,8 +22,8 @@ namespace Task.BusinessLogic.UnitTests.Services
         public void RegisterUser_returnsSuccessRegisterStatusIfValidUser()
         {
             var user = Builder<User>.CreateNew().Build();
-            _userRepository = Mockery.DynamicMock<IUserRepository>();
-            _passwordMethodsProvider = Mockery.DynamicMock<IPasswordMethodsProvider>();
+            _userRepository = Mockery.Stub<IUserRepository>();
+            _passwordMethodsProvider = Mockery.Stub<IPasswordMethodsProvider>();
             using (Mockery.Record())
             {
                 Expect.Call(_passwordMethodsProvider.CreateSalt()).Return("CreateSalt");
@@ -43,8 +43,8 @@ namespace Task.BusinessLogic.UnitTests.Services
         {
             bool validate;
             var user = Builder<User>.CreateNew().Build();
-            _userRepository = Mockery.DynamicMock<IUserRepository>();
-            _passwordMethodsProvider = Mockery.DynamicMock<IPasswordMethodsProvider>();
+            _userRepository = Mockery.Stub<IUserRepository>();
+            _passwordMethodsProvider = Mockery.Stub<IPasswordMethodsProvider>();
             using (Mockery.Record())
             {
                 Expect.Call(_userRepository.GetUserByLogin(null)).IgnoreArguments().Return(user);
@@ -62,7 +62,7 @@ namespace Task.BusinessLogic.UnitTests.Services
         public void CheckUserLogin_returnsFalseIfUserNotExists()
         {
             bool validate;
-            _userRepository = Mockery.DynamicMock<IUserRepository>();
+            _userRepository = Mockery.Stub<IUserRepository>();
             using (Mockery.Record())
             {
                 Expect.Call(_userRepository.GetUserByLogin(null)).IgnoreArguments().Return(null);
@@ -80,7 +80,7 @@ namespace Task.BusinessLogic.UnitTests.Services
         {
             bool validate;
             var user = Builder<User>.CreateNew().Build();
-            _userRepository = Mockery.DynamicMock<IUserRepository>();
+            _userRepository = Mockery.Stub<IUserRepository>();
             using (Mockery.Record())
             {
                 Expect.Call(_userRepository.GetUserByLogin(null)).IgnoreArguments().Return(user);
@@ -97,7 +97,7 @@ namespace Task.BusinessLogic.UnitTests.Services
         public void CheckUserEmail_returnsFalseIfUserNotExists()
         {
             bool validate;
-            _userRepository = Mockery.DynamicMock<IUserRepository>();
+            _userRepository = Mockery.Stub<IUserRepository>();
             using (Mockery.Record())
             {
                 Expect.Call(_userRepository.GetUserByEmail(null)).IgnoreArguments().Return(null);
@@ -115,7 +115,7 @@ namespace Task.BusinessLogic.UnitTests.Services
         {
             bool validate;
             var user = Builder<User>.CreateNew().Build();
-            _userRepository = Mockery.DynamicMock<IUserRepository>();
+            _userRepository = Mockery.Stub<IUserRepository>();
             using (Mockery.Record())
             {
                 Expect.Call(_userRepository.GetUserByEmail(null)).IgnoreArguments().Return(user);
@@ -133,7 +133,7 @@ namespace Task.BusinessLogic.UnitTests.Services
         {
             bool validate;
             var user = Builder<User>.CreateNew().Build();
-            _userRepository = Mockery.DynamicMock<IUserRepository>();
+            _userRepository = Mockery.Stub<IUserRepository>();
             using (Mockery.Record())
             {
                 Expect.Call(_userRepository.GetUserByLogin(null)).IgnoreArguments().Return(user);
@@ -151,7 +151,7 @@ namespace Task.BusinessLogic.UnitTests.Services
         public void DeleteUser_returnsFalseIfUserNotExists()
         {
             bool validate;
-            _userRepository = Mockery.DynamicMock<IUserRepository>();
+            _userRepository = Mockery.Stub<IUserRepository>();
             using (Mockery.Record())
             {
                 Expect.Call(_userRepository.GetUserByLogin(null)).IgnoreArguments().Return(null);
@@ -170,7 +170,7 @@ namespace Task.BusinessLogic.UnitTests.Services
         {
             bool validate;
             var user = Builder<User>.CreateNew().Build();
-            _userRepository = Mockery.DynamicMock<IUserRepository>();
+            _userRepository = Mockery.Stub<IUserRepository>();
             using (Mockery.Record())
             {
                 Expect.Call(_userRepository.GetUserByLogin(null)).IgnoreArguments().Return(user);
@@ -188,7 +188,7 @@ namespace Task.BusinessLogic.UnitTests.Services
         public void LockUser_returnsFalseIfUserNotExists()
         {
             bool validate;
-            _userRepository = Mockery.DynamicMock<IUserRepository>();
+            _userRepository = Mockery.Stub<IUserRepository>();
             using (Mockery.Record())
             {
                 Expect.Call(_userRepository.GetUserByLogin(null)).IgnoreArguments().Return(null);
@@ -206,7 +206,7 @@ namespace Task.BusinessLogic.UnitTests.Services
         {
             bool validate;
             var user = Builder<User>.CreateNew().Build();
-            _userRepository = Mockery.DynamicMock<IUserRepository>();
+            _userRepository = Mockery.Stub<IUserRepository>();
             using (Mockery.Record())
             {
                 Expect.Call(_userRepository.GetUserByLogin(null)).IgnoreArguments().Return(user);
@@ -224,7 +224,7 @@ namespace Task.BusinessLogic.UnitTests.Services
         public void UnlockUser_returnsFalseIfUserNotExists()
         {
             bool validate;
-            _userRepository = Mockery.DynamicMock<IUserRepository>();
+            _userRepository = Mockery.Stub<IUserRepository>();
             using (Mockery.Record())
             {
                 Expect.Call(_userRepository.GetUserByLogin(null)).IgnoreArguments().Return(null);
@@ -242,7 +242,7 @@ namespace Task.BusinessLogic.UnitTests.Services
         {
             bool validate;
             var user = Builder<User>.CreateNew().Build();
-            _userRepository = Mockery.DynamicMock<IUserRepository>();
+            _userRepository = Mockery.Stub<IUserRepository>();
             using (Mockery.Record())
             {
                 Expect.Call(_userRepository.GetUserByLogin(null)).IgnoreArguments().Return(user);
@@ -261,7 +261,7 @@ namespace Task.BusinessLogic.UnitTests.Services
         {
             bool validate;
             var user = Builder<User>.CreateNew().Build();
-            _userRepository = Mockery.DynamicMock<IUserRepository>();
+            _userRepository = Mockery.Stub<IUserRepository>();
             using (Mockery.Record())
             {
                 Expect.Call(_userRepository.GetUserByLogin(null)).IgnoreArguments().Return(user);
